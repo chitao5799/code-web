@@ -1,0 +1,77 @@
+<!--node
+     var params={file:"components.html"}
+    var ls=require("C:\\Users\\NCT99\\AppData\\Roaming\\npm\\node_modules\\live-server") 
+    ls.start(params)-->
+<html>
+
+<head>
+    <link rel="stylesheet" href="./font/fontawesome-free-5.12.1-web/css/all.css">
+    <!-- <link rel="stylesheet" href="./font/fontawesome-free-5.12.1-web/css/brands.css">
+    <link rel="stylesheet" href="./font/fontawesome-free-5.12.1-web/css/solid.css"> -->
+    <link rel="stylesheet" href="./css/style.css">
+    <script type="text/javascript" src="./js/jquery_3.4.1.js"></script>
+    <script type="text/javascript" src="./js/jquery-ui-1.12.1.custom\\jquery-ui.js"></script>
+    <link rel="stylesheet" href="./js/jquery-ui-1.12.1.custom\\jquery-ui.css">
+
+</head>
+
+<body>
+    <!-- start menu -->
+    <div id="menu">
+        <ul>
+            <li>
+                <a href=""><i class="fas fa-globe" style="margin-right: 5px;"></i>English (US)</a>
+            </li>
+            <li>
+                <a href=""><i class="fas fa-dollar-sign" style="margin-right: 5px;"></i>USD</a>
+            </li>
+            <li><a href="">Host a home</a></li>
+            <li><a href="">Host an experience</a></li>
+            <li><a href="">Help</a></li>
+            <li><a href="">Sign up</a></li>
+            <li><a href="">Login</a></li>
+        </ul>
+    </div>
+    <!-- end menu -->
+    <!-- <hr style="clear: both; margin:10px 0px;" /> -->
+    <!--start form  -->
+    <div id="form">
+        <div class="title">Book unique places to stay and things to do.</div>
+        <form action="">
+            <div class="label">WHERE</div>
+            <div class="input">
+                <input class="where inputText" type="text" placeholder="Anywhere">
+            </div>
+            <div id="checking">
+                <div class="trai">
+                    <div class="label">CHECK-IN</div>
+                    <div class="input">
+                        <input type="text" placeholder="mm/dd/yyyy" id="checkin" class="inputDate">
+                    </div>
+                </div>
+                <div class="phai">
+                    <div class="label">CHECK-OUT</div>
+                    <div class="input">
+                        <input type="text" placeholder="mm/dd/yyyy" id="checkout" class="inputDate">
+                    </div>
+                </div>
+            </div>
+            <div class="label">GUESTS</div>
+            <div class="input guests">
+                <div>
+                    <div class="inputText">Guests</div>
+                    <i class="fa fa-angle-down"></i>
+                </div>
+
+            </div>
+            <div>
+                <input type="submit" value="Search">
+            </div>
+        </form>
+    </div>
+    <!-- end form -->
+
+    <script type="text/javascript" src="./js/components.js"></script>
+</body>
+
+</html>
