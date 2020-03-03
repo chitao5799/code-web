@@ -57,12 +57,79 @@
                 </div>
             </div>
             <div class="label">GUESTS</div>
-            <div class="input guests">
-                <div>
-                    <div class="inputText">Guests</div>
-                    <i class="fa fa-angle-down"></i>
+            <div class="input guestsItem">
+                <div class="guests">
+                    <div class="inputText" id="guestsNumber">Guests</div>
+                    <i class="fa fa-angle-down" id="arrow"></i>
                 </div>
+                <div class="menuItem">
+                    <div class="item" style="margin-bottom: 18px;">
+                        <div class="titleItem">Adults</div>
+                        <div class="choose">
+                            <!-- <i class="fas fa-plus-circle"></i> -->
+                            <svg height="34" width="34" id="adultMinus">
+                            <circle cx="17" cy="17" r="16" stroke="#B3DADB" stroke-width="1" fill="none" />
+                            <line x1="13" y1="17" x2="21" y2="17" style="stroke:rgb(204,230,231);stroke-width:2" />
+                            Sorry, your browser does not support inline SVG.                           
+                          </svg>
+                            <div class="number" style="letter-spacing: 1px;" id="adultNumber">0+</div>
+                            <!-- <i class="fas fa-minus-circle"></i> -->
+                            <svg height="34" width="34" id="adultPlus" class="plus">
+                            <circle cx="17" cy="17" r="16" stroke="#02858A" stroke-width="1" fill="none" />
+                            <line x1="13" y1="17" x2="21" y2="17" style="stroke:#5CB0B4;stroke-width:2" />
+                            <line x1="17" y1="13" x2="17" y2="21" style="stroke:#5CB0B4;stroke-width:2" />
+                            Sorry, your browser does not support inline SVG.                           
+                          </svg>
+                        </div>
+                    </div>
 
+                    <div class="item">
+                        <div class="titleItem2">
+                            <div class="titleItem">Children</div>
+                            <div>Ages 2–12</div>
+                        </div>
+
+                        <div class="choose">
+                            <svg height="34" width="34" id="childrenMinus">
+                            <circle cx="17" cy="17" r="16" stroke="#B3DADB" stroke-width="1" fill="none" />
+                            <line x1="13" y1="17" x2="21" y2="17" style="stroke:rgb(204,230,231);stroke-width:2" />
+                            Sorry, your browser does not support inline SVG.                           
+                          </svg>
+                            <div class="number" style="letter-spacing: 1px;">0+</div>
+                            <svg height="34" width="34" id="childrenPlus" class="plus">
+                            <circle cx="17" cy="17" r="16" stroke="#02858A" stroke-width="1" fill="none" />
+                            <line x1="13" y1="17" x2="21" y2="17" style="stroke:#5CB0B4;stroke-width:2" />
+                            <line x1="17" y1="13" x2="17" y2="21" style="stroke:#5CB0B4;stroke-width:2" />
+                            Sorry, your browser does not support inline SVG.                           
+                          </svg>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="titleItem2">
+                            <div class="titleItem">Infants</div>
+                            <div>Under 2</div>
+                        </div>
+                        <div class="choose">
+                            <svg height="34" width="34" id="infantMinus">
+                            <circle cx="17" cy="17" r="16" stroke="#B3DADB" stroke-width="1" fill="none" />
+                            <line x1="13" y1="17" x2="21" y2="17" style="stroke:rgb(204,230,231);stroke-width:2" />
+                            Sorry, your browser does not support inline SVG.                           
+                          </svg>
+                            <div class="number" style="letter-spacing: 1px;">0+</div>
+                            <svg height="34" width="34" id="infantPlus" class="plus">
+                            <circle cx="17" cy="17" r="16" stroke="#02858A" stroke-width="1" fill="none" />
+                            <line x1="13" y1="17" x2="21" y2="17" style="stroke:#5CB0B4;stroke-width:2" />
+                            <line x1="17" y1="13" x2="17" y2="21" style="stroke:#5CB0B4;stroke-width:2" />
+                            Sorry, your browser does not support inline SVG.                           
+                          </svg>
+                        </div>
+                    </div>
+                    <div class="do">
+                        <div id="clear" class="titleItem">Clear</div>
+                        <div id="save" style="font-size: 14px; color: #02858A;cursor: pointer;float: right;">Save</div>
+                    </div>
+                </div>
             </div>
             <div>
                 <input type="submit" value="Search">

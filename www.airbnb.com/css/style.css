@@ -129,9 +129,83 @@ body {
     margin-bottom: 22px;
 }
 
+#form form .guestsItem {
+    position: relative;
+}
+
 #form form .guests .inputText {
     float: left;
     margin-right: 287px;
+}
+
+#form form .input .menuItem {
+    /* height: 252px;
+    width: 380px; */
+    width: 328px;
+    height: 206px;
+    padding: 34px 26px 12px 26px;
+    position: absolute;
+    top: 47px;
+    border-radius: 5px!important;
+    box-shadow: 0px 0px 25px 2px #bababa94;
+    display: none;
+}
+
+#form form .input .menuItem .item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#form form .input .menuItem .titleItem,
+#form form .input div.number {
+    align-self: center;
+    color: #484848;
+}
+
+#form form .input .menuItem .titleItem2 {
+    margin-bottom: 26px;
+}
+
+#form form .input .menuItem .titleItem2 div:nth-child(1) {
+    margin-bottom: 8px;
+    font-size: 15px;
+}
+
+#form form .input .menuItem .titleItem2 div:nth-child(2) {
+    color: rgba(68, 55, 55, 0.64);
+    font-size: 14px;
+}
+
+#form form .input .menuItem .choose {
+    width: 120px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-self: center;
+}
+
+#form form .input .menuItem svg.plus {
+    cursor: pointer;
+}
+
+
+/* 
+#form form .input .menuItem .do {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+} */
+
+#clear {
+    font-size: 14px;
+    cursor: pointer;
+    display: none;
+}
+
+#clear:hover,
+#save:hover {
+    text-decoration: underline;
 }
 
 #form form input[type="submit"] {
@@ -142,7 +216,7 @@ body {
     float: right;
     font-size: 16px;
     font-weight: bold;
-    padding: 13px 0px;
+    padding: 15px 0px;
     cursor: pointer;
 }
 
