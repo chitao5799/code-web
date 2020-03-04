@@ -126,16 +126,24 @@ body {
 #form form .guests {
     color: #767676;
     cursor: pointer;
+    /* width: 366px; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     margin-bottom: 22px;
+}
+
+#form form .guests div:nth-child(1) {
+    flex-basis: 200px;
+    flex-grow: 1;
+}
+
+#form form .guests div:nth-child(2) {
+    flex-basis: 22px;
 }
 
 #form form .guestsItem {
     position: relative;
-}
-
-#form form .guests .inputText {
-    float: left;
-    margin-right: 287px;
 }
 
 #form form .input .menuItem {
@@ -145,7 +153,7 @@ body {
     height: 206px;
     padding: 34px 26px 12px 26px;
     position: absolute;
-    top: 47px;
+    top: 50px;
     border-radius: 5px!important;
     box-shadow: 0px 0px 25px 2px #bababa94;
     display: none;
@@ -163,10 +171,6 @@ body {
     color: #484848;
 }
 
-#form form .input .menuItem .titleItem2 {
-    margin-bottom: 26px;
-}
-
 #form form .input .menuItem .titleItem2 div:nth-child(1) {
     margin-bottom: 8px;
     font-size: 15px;
@@ -175,6 +179,11 @@ body {
 #form form .input .menuItem .titleItem2 div:nth-child(2) {
     color: rgba(68, 55, 55, 0.64);
     font-size: 14px;
+}
+
+#form form .input .menuItem .item:nth-child(2),
+#form form .input .menuItem .item:nth-child(3) {
+    margin-bottom: 26px;
 }
 
 #form form .input .menuItem .choose {
