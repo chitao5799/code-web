@@ -1,0 +1,194 @@
+﻿
+<html>
+
+<head>
+    <title>bài 3b</title>
+    <meta charset="UTF-8">
+    <style>
+        body {
+            font-family: sans-serif;
+        }
+        
+        .head {
+            background-color: green;
+        }
+        
+        .head h1 {
+            color: white;
+            padding: 15px 0px;
+            margin-left: 20px;
+        }
+        
+        #content {
+            display: grid;
+            /* grid-template-columns: repeat(12, 8.33%); */
+            grid-template-columns: repeat(12, 8%);
+            justify-content: center;
+        }
+        
+        #trai {
+            grid-column: 1/4;
+        }
+        /* #trai div {
+            background-color: #8a7f8a;
+            color: white;
+            margin-bottom: 10px;
+            width: 80%;
+            padding: 10px 0px;
+            padding-left: 10px;
+        } */
+        
+        #trai div a {
+            text-decoration: none;
+            display: block;
+            background-color: #8a7f8a;
+            color: white;
+            margin-bottom: 10px;
+            width: 80%;
+            padding: 10px 0px;
+            padding-left: 10px;
+        }
+        
+        #trai div a:hover {
+            background-color: darkolivegreen;
+            cursor: pointer;
+        }
+        
+        #giua {
+            grid-column: 4/10;
+        }
+        
+        .component {
+            display: block;
+            margin-bottom: 48px;
+        }
+        
+        .component *:not(h5) {
+            font-size: 14px;
+        }
+        
+        .component a {
+            float: right;
+            text-decoration: none;
+        }
+        
+        .component h5 {
+            width: fit-content;
+        }
+        
+        .component h5 a {
+            color: black;
+            margin-bottom: 15px;
+        }
+        
+        .component a:hover,
+        .component h5:hover {
+            color: #68b835;
+            cursor: pointer;
+        }
+        
+        #phai {
+            grid-column: 10/13;
+            border: 15px solid #4f4b4b;
+            /* width: 80%; */
+            /* height: fit-content; */
+            justify-self: end;
+            /**/
+            width: 18vw;
+            height: 13vw;
+        }
+        
+        #phai img {
+            /* width: 230px;
+            height: 179px; */
+            /* width: inherit;
+            height: auto; */
+            width: inherit;
+            height: inherit;
+        }
+        
+        .foot {
+            background-color: #222222;
+            text-align: center;
+            color: white;
+            padding: 16px 0px;
+            margin-top: 30px;
+        }
+        
+        @media screen and (max-width: 768px) {
+            #content {
+                display: grid;
+                grid-template-rows: auto auto auto;
+                grid-template-columns: 90%;
+            }
+            #trai {
+                grid-row: 1/1;
+                grid-column: 1/1;
+            }
+            #trai div a {
+                width: calc(100% - 10px);
+                /*-10% của padding left*/
+            }
+            #giua {
+                grid-row: 2/3;
+                grid-column: 1/1;
+                width: 100%;
+            }
+            #phai {
+                grid-row: 3/4;
+                grid-column: 1/1;
+                /* width: 94%;
+                /*độ rộng còn lại cho border
+                height: fit-content;*/
+                width: 81vw;
+                height: 60vw;
+            }
+            /* #phai img {
+                width: 100%;
+                height: auto;
+            } */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="head">
+        <h1>CHỢ VIỆC LÀM</h1>
+    </div>
+    <div id="content">
+        <div id="trai">
+            <div><a href="https://www.google.com.vn/" target="_blank">CNTT</a> </div>
+            <div><a href="https://www.google.com.vn/" target="_blank">GIÁO DỤC</a></div>
+            <div><a href="https://www.google.com.vn/" target="_blank">KIẾN THỨC</a></div>
+            <div><a href="https://www.google.com.vn/" target="_blank">KINH TẾ</a></div>
+        </div>
+        <div id="giua">
+            <h3>CƠ HỘI NGHỀ NGHIỆP DÀNH CHO SINH VIÊN CNTT</h3>
+            <div class="component">
+
+                <h5> <a href="https://www.google.com.vn/" target="_blank">Trưởng nhóm lập trình </a></h5>
+
+                <p>Team leader - Trưởng nhóm lập trình là công việc thường thấy của dân IT khi có 3-5 năm kinh nghiệm...</p>
+                <a href="https://www.google.com.vn/" target="_blank">Chi tiết</a>
+            </div>
+
+            <div class="component">
+                <h5><a href="https://www.google.com.vn/" target="_blank">Chuyên gia phân tích dữ liệu</a></h5>
+                <p>Ngoài việc trở thành trưởng nhóm lập trình, sinh viên IT có thể đảm nhiệm vị trí data analyst - chuyên gia phân tích dữ liệu, với mức lương 800-100 USD...</p>
+                <a href="https://www.google.com.vn/" target="_blank">Chi tiết</a>
+            </div>
+
+            <div class="component">
+                <h5><a href="https://www.google.com.vn/" target="_blank">Lập trình viên về web</a></h5>
+                <p>Web developer - lập trình viên về web là vị trí của các sinh viên IT khi mới ra trường với kinh nghiệm 1-3 năm...</p>
+                <a href="https://www.google.com.vn/" target="_blank">Chi tiết</a>
+            </div>
+        </div>
+        <div id="phai">
+            <img src="./success.png" alt="">
+        </div>
+    </div>
+    <div class="foot">Design by ...</div>
+</body>
+
+</html>

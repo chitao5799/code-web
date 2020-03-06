@@ -1,0 +1,265 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Bài 4</title>
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+        }
+        
+        body {
+            background-color: white;
+            font-family: sans-serif;
+        }
+        
+        h1 {
+            padding: 25px 0px;
+            padding-left: 20px;
+            color: white;
+            background-color: #38d848;
+        }
+        
+        div#menu {
+            background-color: brown;
+            height: 37px;
+        }
+        
+        a {
+            text-decoration: none;
+        }
+        
+        ul.menuMain {
+            list-style: none;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+            padding-top: 10px;
+        }
+        
+        ul.menuMain>li>a {
+            color: white;
+            padding: 10px 35px;
+        }
+        
+        ul.menuMain>li {
+            position: relative;
+        }
+        
+        ul.menuMain>li>a:hover {
+            background-color: green;
+        }
+        
+        ul.menuMain>li:hover ul.menuItem {
+            display: block;
+        }
+        
+        ul.menuItem {
+            list-style: none;
+            position: absolute;
+            top: 27px;
+            width: 100%;
+            display: none;
+            overflow: hidden;
+        }
+        
+        .menuItem li a {
+            padding: 10px 0px;
+            padding-left: 35px;
+            display: block;
+            background: white;
+            color: #000;
+            width: 100%;
+        }
+        
+        .menuItem li a:hover {
+            background-color: #48c4b5;
+        }
+        
+        #content {
+            display: grid;
+            grid-template-columns: repeat(12, calc(96vw /12));
+            justify-content: center;
+            margin-top: 20px;
+        }
+        
+        button {
+            width: 80px;
+            height: 29px;
+        }
+        
+        input#search {
+            padding: 5px 15px;
+        }
+        
+        .left {
+            grid-column: 1/4;
+        }
+        
+        .left input:hover {
+            background-color: #ededed;
+        }
+        
+        .right {
+            grid-column: 4/13;
+        }
+        
+        .item {
+            display: inline-block;
+            border: 1px solid black;
+            margin: 0px 10px 14px 0px;
+        }
+        
+        .titile {
+            margin-top: 25px;
+            margin-left: 15px;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        
+        .titile a {
+            color: #4b4a4a;
+        }
+        
+        .titile a:hover {
+            color: #6060e9;
+        }
+        
+        .right .item img {
+            width: 175px;
+            height: auto;
+            margin: 15px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1>BOOKS ONLINE</h1>
+    <div id="menu">
+        <ul class="menuMain">
+            <li>
+                <a href="">SÁCH GIÁO KHOA</a>
+                <ul class="menuItem">
+                    <li><a href="">Lớp 6</a></li>
+                    <li><a href="">Lớp 7</a></li>
+                    <li><a href="">Lớp 8</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="">SÁCH THAM KHẢO</a>
+                <ul class="menuItem">
+                    <li><a href="">Lớp 6</a></li>
+                    <li><a href="">Lớp 7</a></li>
+                    <li><a href="">Lớp 8</a></li>
+                    <li><a href="">Lớp 9</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="">TẠP CHÍ CHUYÊN NGÀNH</a>
+                <ul class="menuItem">
+                    <li><a href="">Sinh học</a></li>
+                    <li><a href="">CNTT</a></li>
+                    <li><a href="">Y học</a></li>
+                    <li><a href="">Điện tử</a></li>
+                    <li><a href="">Kinh tế</a></li>
+                </ul>
+            </li>
+            <li><a href="">TRUYỆN THIẾU NHI</a> </li>
+        </ul>
+    </div>
+    <div id="content">
+        <div class="left">
+            <p>Tìm kiếm:</p>
+            <input type="text" name="" id="search" placeholder="Tìm khiếm">
+            <button>Tìm</button>
+        </div>
+        <div class="right">
+            <div class="item">
+                <div class="titile">
+                    <a href="">Toán</a>
+                </div>
+                <a href=""><img src="./Giai_tich_12.png" alt=""></a>
+            </div>
+            <div class="item">
+                <div class="titile">
+                    <a href="">Ngữ văn</a>
+                </div>
+                <a href=""><img src="./Giai_tich_12.png" alt=""></a>
+            </div>
+            <div class="item">
+                <div class="titile">
+                    <a href="">Toán - STK</a>
+                </div>
+                <a href=""><img src="./Giai_tich_12.png" alt=""></a>
+            </div>
+            <div class="item">
+                <div class="titile">
+                    <a href="">Ngữ văn - STK</a>
+                </div>
+                <a href=""><img src="./Giai_tich_12.png" alt=""></a>
+            </div>
+            <div class="item">
+                <div class="titile">
+                    <a href="">Toán</a>
+                </div>
+                <a href=""><img src="./Giai_tich_12.png" alt=""></a>
+            </div>
+            <div class="item">
+                <div class="titile">
+                    <a href="">Ngữ văn - STK</a>
+                </div>
+                <a href=""><img src="./Giai_tich_12.png" alt=""></a>
+            </div>
+            <div class="item">
+                <div class="titile">
+                    <a href="">Toán - STK</a>
+                </div>
+                <a href=""><img src="./Giai_tich_12.png" alt=""></a>
+            </div>
+            <div class="item">
+                <div class="titile">
+                    <a href="">Toán</a>
+                </div>
+                <a href=""><img src="./Giai_tich_12.png" alt=""></a>
+            </div>
+            <div class="item">
+                <div class="titile">
+                    <a href="">Ngữ văn</a>
+                </div>
+                <a href=""><img src="./Giai_tich_12.png" alt=""></a>
+            </div>
+            <div class="item">
+                <div class="titile">
+                    <a href="">Toán - STK</a>
+                </div>
+                <a href=""><img src="./Giai_tich_12.png" alt=""></a>
+            </div>
+            <div class="item">
+                <div class="titile">
+                    <a href="">Ngữ văn - STK</a>
+                </div>
+                <a href=""><img src="./Giai_tich_12.png" alt=""></a>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="foot-left">
+            <div class="foot-left-left">
+                <div><a href="">Lớp 6</a> </div>
+                <div><a href="">Lớp 7</a> </div>
+                <div><a href="">Lớp 8</a> </div>
+                <div><a href="">Lớp 9</a> </div>
+            </div>
+            <div class="foot-left-right">
+                <div><a href="">CNTT</a> </div>
+                <div><a href="">Y học</a> </div>
+                <div><a href="">Lịch sử</a> </div>
+                <div><a href="">Văn học</a> </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
