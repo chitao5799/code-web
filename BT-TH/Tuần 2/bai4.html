@@ -1,3 +1,5 @@
+﻿<!-- run in chrome, firefox bị hơi lỗi -->
+
 <html>
 
 <head>
@@ -23,7 +25,7 @@
         
         div#menu {
             background-color: brown;
-            height: 37px;
+            padding:10px 0px;
         }
         
         a {
@@ -35,13 +37,13 @@
             display: flex;
             flex-direction: row;
             justify-content: flex-end;
-            padding-top: 10px;
+            
         }
         
         ul.menuMain>li>a {
             color: white;
             /* padding: 10px 35px; */
-            padding: 11px 35px 9px 35px;
+            padding: 10px 35px 11px 35px;
         }
         
         ul.menuMain>li {
@@ -59,7 +61,7 @@
         ul.menuItem {
             list-style: none;
             position: absolute;
-            top: 27px;
+            top: 28px;
             width: 100%;
             display: none;
             overflow: hidden;
@@ -224,13 +226,17 @@
         
         @media screen and (max-width: 930px) {
             ul.menuMain>li>a {
-                padding: 11px 10px 9px 10px;
+                padding: 10px 10px 11px 10px;
             }
+	input#search {
+   		 padding: 5px 0px;
+		}
         }
         
         @media screen and (max-width: 768px) {
             div#menu {
                 height: auto;
+		padding: 0px;
             }
             ul.menuMain {
                 list-style: none;
