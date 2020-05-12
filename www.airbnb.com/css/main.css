@@ -5,6 +5,36 @@
     font-family: sans-serif;
 }
 
+.playstayContentButton {
+    position: relative;
+}
+
+.playstayContentButton .prev:hover {
+    background-color: #ffffffc4;
+    cursor: pointer;
+}
+
+.playstayContentButton .next:hover {
+    background-color: #ffffffc4;
+    cursor: pointer;
+}
+
+.playstayContentButton .prev {
+    position: absolute;
+    z-index: 10;
+    top: 90px;
+    left: -12px;
+    background-color: #ffffff6e;
+}
+
+.playstayContentButton .next {
+    position: absolute;
+    top: 90px;
+    z-index: 10;
+    right: -12px;
+    background-color: #ffffff6e;
+}
+
 .wrap_text_block4 {
     margin-top: -8px;
     /* padding-left: 15px; */
@@ -29,10 +59,13 @@
 }
 
 .wrapPlaystayItems {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    /* display: flex; */
+    /* flex-direction: row; */
+    /* justify-content: space-between; */
+    overflow: hidden;
+    height: 280px;
     margin-top: 20px;
+    position: relative;
 }
 
 .AddventuresBlock {
@@ -453,7 +486,81 @@ a.explore_link {
     width: 24%;
     height: 280px;
 }
-
+.wrap4itemPlayStay{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: absolute;
+    width: 100%;
+    /* top: 0; */
+    /* left: 0; */
+    opacity: 0;
+    visibility: hidden;
+}
+.wrap4itemPlayStay.itemPlayStayActive{
+    opacity: 1;
+    visibility: visible;
+}
+.bien_mat_sang_trai{
+    animation: hided-trai 1s forwards;
+}
+@-webkit-keyframes hided-trai{
+    0%{
+        transform: translateX(0%);
+        opacity: 1;
+        visibility: visible;
+    }
+    100%{
+        transform: translateX(-100%);
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+.di_vao_tu_ben_phai{
+    animation: vao-phai 1s forwards;
+}
+@-webkit-keyframes vao-phai{
+    0%{
+        transform: translateX(100%);
+        opacity: 0;
+        visibility: hidden;
+    }
+    100%{
+        transform: translateX(0%);
+        opacity: 1;
+        visibility: visible;
+    }
+}
+.bien_mat_sang_phai{
+    animation: hided-phai 1s forwards;
+}
+@-webkit-keyframes hided-phai{
+    0%{
+        transform: translateX(0%);
+        opacity: 1;
+        visibility: visible;
+    }
+    100%{
+        transform: translateX(100%);
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+.di_vao_tu_ben_trai{
+    animation: vao-trai 1s forwards;
+}
+@-webkit-keyframes vao-trai{
+    0%{
+        transform: translateX(-100%);
+        opacity: 0;
+        visibility: hidden;
+    }
+    100%{
+        transform: translateX(0%);
+        opacity: 1;
+        visibility: visible;
+    }
+}
 .place_stay_item div.img {
     width: 100%;
     height: 66%;
