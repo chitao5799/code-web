@@ -5,11 +5,71 @@
     font-family: sans-serif;
 }
 
+.wrap_text_block4 {
+    margin-top: -8px;
+    /* padding-left: 15px; */
+    /* padding-top: 15px; */
+    /* padding-bottom: 10px; */
+    padding: 15px;
+    /* border-radius: 10px; */
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-shadow: 0px 0px 8px 0px #00000030;
+}
+
+.Block4eExplore {
+    margin-top: 10px;
+}
+
+.wraper_feature {
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+    justify-content: space-between;
+}
+
+.wrapPlaystayItems {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.AddventuresBlock {
+    margin: 20px 0px;
+}
+
+.introduceContent {
+    margin-top: 40px;
+}
+
+.wrapper_introduce {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.wrapper_header {
+    width: 90%;
+    max-width: 1215px;
+    height: 100%;
+    margin: auto;
+    position: relative;
+}
+
 @font-face {
     font-family: "circular";
     src: url("../font/Circular/CircularStd-Medium.ttf");
 }
-
+/*@font-face {
+    font-family: "adlanta";
+    src: url("../font/Adlanta Font/Adlanta.otf");
+}*/
+/*@font-face {
+    font-family: "HelveticaNeues";
+    src: url("../font/__MACOSX/Fontbox.vn - Helvetica Neue Tieng Viet/OTF/._HelveticaNeue.otf");
+}*/
 body {
     background-color: white;
 }
@@ -20,7 +80,7 @@ body {
     background-image: url("../images/head.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    position: relative;
+    /* position: relative; */
 }
 
 
@@ -29,7 +89,8 @@ body {
 #header .logo {
     position: absolute;
     top: 23px;
-    left: 24px;
+    left: 0px;
+    /* padding-top: 26px; */
     color: white;
     font-size: 34px;
 }
@@ -41,7 +102,8 @@ body {
 #menu {
     position: absolute;
     top: 30px;
-    right: 18px;
+    right: 0px;
+    /* float: right; */
     color: white;
 }
 
@@ -84,7 +146,8 @@ body {
 #form {
     position: absolute;
     top: 120px;
-    left: 80px;
+    left: 0px;
+    /* margin-top: 53px; */
     width: 380px;
     height: 416px;
     background-color: rgb(255, 255, 255);
@@ -262,7 +325,7 @@ body {
     color: white;
     width: 160px;
     height: 45px;
-    right: 24px;
+    right: 0px;
     bottom: 19px;
     font-size: 13px;
     font-weight: bold;
@@ -274,7 +337,8 @@ body {
 
 #wraper {
     margin: 0 auto;
-    width: 88%;
+    width: 90%;
+    max-width: 1215px;
 }
 
 #exploreContent {
@@ -282,7 +346,7 @@ body {
     margin-top: 42px;
 }
 
-#exploreContent .title {
+.title.titleInContent {
     color: black;
     font-weight: bold;
     font-size: 20px;
@@ -291,14 +355,17 @@ body {
 div#explore {
     display: flex;
     margin-top: 20px;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 #exploreContent .explore_item {
     background-color: white;
     height: 86px;
-    width: 100%;
+    width: 32%;
+    /* width: 84%; */
     border-radius: 10px;
-    margin-right: 16px;
+    /* margin-right: 16px; */
     overflow: hidden;
     box-shadow: 0px 0px 10px #c1c1c1;
 }
@@ -322,7 +389,8 @@ a.explore_link {
 }
 
 .introduce_item {
-    width: 225px;
+    max-width: 225px;
+    width: 19%;
     height: 420px;
 }
 
@@ -381,7 +449,8 @@ a.explore_link {
 }
 
 .place_stay_item {
-    width: 285px;
+    max-width: 290px;
+    width: 24%;
     height: 280px;
 }
 
@@ -407,6 +476,7 @@ a.explore_link {
     flex-grow: 1;
     font-family: 'Sen', sans-serif;
     font-size: 14px;
+    color: gray;
 }
 
 .place_stay_item .top .star {
@@ -426,6 +496,7 @@ a.explore_link {
     color: #222222;
     font-size: 15px;
     margin-top: 5px;
+    font-family: sen;
 }
 
 .place_stay_item .money {
@@ -439,14 +510,17 @@ a.explore_link {
 }
 
 .feature_item {
-    width: 385px;
+    /* width: 385px; */
     height: 330px;
+    width: 32.3%;
 }
 
 .feature_item a .img {
     height: 235px;
     width: 100%;
     border-radius: 12px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
     overflow: hidden;
 }
 
@@ -475,7 +549,9 @@ footer {
 }
 
 .container_footer {
-    width: 1032px;
+    /* width: 1032px; */
+    width: 90%;
+    max-width: 1215px;
     margin: 0 auto;
     margin-top: 50px;
 }
@@ -510,7 +586,8 @@ footer {
 
 .container_footer .menu ul li .new {
     float: right;
-    margin-right: 71px;
+    margin-right: 40%;
+    /* float: left; */
     margin-top: 2px;
     padding: 2px 5px;
     color: white;
