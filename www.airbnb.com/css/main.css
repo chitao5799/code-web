@@ -5,6 +5,153 @@
     font-family: sans-serif;
 }
 
+.imgIntroOnlineLeft {
+    width: 100%;
+    height: 522px;
+    overflow: hidden;
+}
+
+.imgIntroOnlineRightDuoi img {
+    width: 100%;
+}
+
+.imgIntroOnlineRightDuoi {
+    width: 100%;
+    height: 218px;
+    overflow: hidden;
+}
+
+.imgIntroOnlineRightTren {
+    width: 100%;
+    height: 216px;
+    overflow: hidden;
+}
+
+.contentIntroOnlineRightDuoi {
+    border-radius: 16px;
+    overflow: hidden;
+}
+
+.contentIntroOnlineRightTrenItem .wrapTextContentIntroOnline span {
+    width: 100%;
+}
+
+.contentIntroOnlineRightTrenItem img {
+    width: 100%;
+    /* height: 216px; */
+}
+
+.contentIntroOnlineRightTrenItem {
+    width: 48.5%;
+    border-radius: 16px;
+    overflow: hidden;
+}
+
+.contentIntroOnlineRightTren {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 16px;
+}
+
+.wrapTextContentIntroOnline {
+    width: 100%;
+    padding: 16px;
+    line-height: 20px;
+    background-color: rgb(34, 34, 34) !important;
+    box-sizing: border-box;
+}
+
+.wrapTextContentIntroOnline span {
+    /* background-color: rgb(34, 34, 34) !important; */
+    width: 45%;
+    display: block;
+    /* padding: 15px 40px 20px 8px; */
+    box-sizing: border-box;
+    color: white;
+    font-size: 16px;
+    font-family: sen,sans-serif;
+}
+
+.contentIntroOnlineLeft img {
+    width: 100%;
+}
+
+.contentIntroOnlineRight {
+    width: 49.3%;
+}
+
+.contentIntroOnlineLeft {
+    width: 49.3%;
+    border-radius: 16px;
+    overflow: hidden;
+}
+
+.contentIntroOnline {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    padding-top: 36px;
+}
+
+.titileIntroOnlineRight a {
+    padding: 10px 15px;
+    color: white;
+    border: 1px solid white;
+    font-size: 14px;
+    border-radius: 5px;
+}
+
+.titileIntroOnlineRight a:hover {
+    /* background-color: white; */
+    background: rgb(113, 113, 113) !important;
+}
+
+.titileIntroOnlineRight {
+    padding-top: 11px;
+}
+
+.titileIntroOnlineLeft a {
+    color: white;
+    padding: 10px;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+
+.titileIntroOnlineLeft p {
+    font-family: sen, sans-serif;
+    width: 43%;
+}
+
+.titileIntroOnlineLeft h2 {
+    /* font-family: 'Sen', sans-serif; */
+    font-size: 31.8px;
+}
+
+.titileIntroOnlineLeft {
+    width: 85%;
+}
+
+.titileIntroOnline {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.containIntroOnline {
+    width: 100%;
+    color: white;
+    padding: 65px 0px 80px 0px;
+    font-family: 'Sen', sans-serif;
+}
+
+.wrapIntroOnline {
+    background-color: black;
+    width: 100%;
+    margin: 50px 0px;
+}
+
 .playstayContentButton {
     position: relative;
 }
