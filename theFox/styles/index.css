@@ -129,6 +129,10 @@ div#wrap-contact-top .cart:hover div#product-cart{
 
 div#menu-top >ul >li > a:hover {
     color: #1ABC9C;
+    text-decoration: none;
+}
+div#menu-top a:hover {
+    text-decoration: none;
 }
 .loge-menu-top {box-sizing: border-box;margin-top: 25px;/* padding-top: 13px; *//* overflow: hidden; */}
 div#menu-top>ul>li {
@@ -264,7 +268,7 @@ span.itemSubmenu-icon-2 {
     left: -624px;
 }
 .sub-menu-level2.sub-menu-level2-3 {
-    left: -478px;
+    left: -481px;
 }
 div#menu-top .sub-menu-level2.sub-menu-level2-3 a.itemSubmenu-level2-3-title {
     color: black!important;
@@ -335,5 +339,171 @@ span.itemSubmenu-icon {
     font-family: LatoRegular;
     padding-left: 25px;
     box-sizing: border-box;
+}
+.sub-menu-level2.sub-menu-level2-8 {
+    left: -1051px;
+}
+.sub-menu-level2-8 .contentItemSubmenu{
+    padding:20px;
+}
+.sub-menu-level2-8 .componentContent{
+    padding: 20px 0px;
+    width:100%;
+    border-bottom: 1px solid #d0d0d0fa;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+.sub-menu-level2-8 .componentContent:last-child{
+    border-bottom:none;
+}
+.sub-menu-level2-8 .componentContent .img{
+    margin-right: 20px;
+    line-height: 0px;
+    position: relative;
+}
+.sub-menu-level2-8 .LayerMo{
+    width: 84px;
+    height: 84px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #ffffff4d;
+    display: none;
+}
+.sub-menu-level2-8 .LayerMo.hienLayerMo{
+    display: block;
+}
+.sub-menu-level2-8 .componentTitle{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+   margin-bottom: 10px;
+}
+.sub-menu-level2-8 .iconTitle .tren{
+    width: 14px;
+    height: 7px;
+    background-color: #1ABC9C;
+}
+.sub-menu-level2-8 .iconTitle .duoi{
+    width: 14px;
+    height: 7px;
+    background-color: #46D1FF;
+}
+.sub-menu-level2-8 .nameProduct a{
+    color: #484c50;
+}
+.sub-menu-level2-8 .nameProduct a:hover,
+.sub-menu-level2-8 .nameProduct a.nameProductHovered{
+    color: #46D1FF;
+}
+.sub-menu-level2-8 .componentContent .text *{
+    margin-bottom: 15px;
+    line-height: 18px;
+    font-family: LatoRegular;
+    /* font-family: Lato; */
+    font-size: 14px;
+    font-weight: bolder;
+}
+.sub-menu-level2-8 .componentContent .text .price{
+    margin-bottom: 0px;
+}
+.sub-menu-level2-8 .componentContent .priceOld{
+    text-decoration: line-through;
+}
+.sub-menu-level2-8 .componentContent .priceNew{
+    color: #1ABC9C;
+}
+.sub-menu-level2-8 .price {
+    color: #A1B1BC;
+    font-size: 18px;
+}
+.sub-menu-level2-8 .starts {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    /* line-height: 0px; */
+}
+.sub-menu-level2-8 .star {
+    color: #FFCC00;
+    margin-bottom: 0px!important;
+    font-size: 16px;
+}
+
+.sub-menu-level2-8 .iconTitle {
+    margin-right: 12px;
+}
+
+.sub-menu-level2-8 .componentTitle h3 {
+    font-family: Lato;font-weight: bold;
+    font-size: 18px;/* padding: 0px; */
+    line-height: 19px;
+}
+.sub-menu-level2-8 ul>li:last-child{
+    border-bottom: 1px solid #d0d0d0fa;
+}
+#ItemMenuSearch .iconSearch>*{
+    cursor: pointer;
+    
+}
+#ItemMenuSearch .iconSearch:hover{
+    color: #1ABC9C;
+}
+.itemMenuSearch input[type="text"]::placeholder {
+    color: #a8b7c1;
+}
+
+.itemMenuSearch input[type="text"]:focus {
+    outline: none;
+}
+
+.itemMenuSearch .input svg {
+    color: #1ABC9C;
+    font-size: 16px;
+}
+
+.itemMenuSearch .input input[type="text"] {
+    border: none;
+    color: #a8b7c1!important;
+    font-size: 15px;
+    width: 175px;
+}
+#ItemMenuSearch span.iconSearch {
+    display: block;
+    padding-left: 20px;
+    width: 17px;
+}
+.itemMenuSearch .input {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 195px;
+    padding: 10px 18px;
+    background-color: white;
+    border: 1px solid #ECF0F1;
+    border-radius: 5px;
+}
+.itemMenuSearch button {
+    border: navajowhite;
+    background: white;
+    cursor: pointer;
+}
+.itemMenuSearch {
+    position: absolute;
+    right: 0px;
+    padding: 10px;
+    background-color: white;
+    border-top: 3px solid  #1ABC9C;
+    top: 88px;
+    box-shadow: 0px 8px 14px #8e8e8e66;
+    transform: scale(0.8,0.8);
+    transition-duration: 0.3s;
+    opacity: 0;
+    visibility: hidden;
+}
+.itemMenuSearch.showItemMenuSearch{
+    transform: scale(1,1);
+    opacity: 1;
+    visibility: visible;
 }
 /*======================end menu top===========================*/
