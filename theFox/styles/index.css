@@ -507,3 +507,253 @@ span.itemSubmenu-icon {
     visibility: visible;
 }
 /*======================end menu top===========================*/
+
+/* ===================== start slide advert ==================*/
+
+#wrapperSlideAdvert .containBtnLeft:hover .btnLeft ,
+#wrapperSlideAdvert .containBtnRight:hover .btnRight{
+    color: #AAAAAA;
+}
+
+#wrapperSlideAdvert .containBtnLeft:hover,
+#wrapperSlideAdvert .containBtnRight:hover {
+    background-color: white;
+}
+
+#wrapperSlideAdvert .btnLeft,#wrapperSlideAdvert .btnRight {
+    font-size: 34px;
+    padding-top: 20px;
+    padding-left: 25px;
+    color: white;
+
+}
+
+#wrapperSlideAdvert .containBtnLeft,
+#wrapperSlideAdvert .containBtnRight {
+width: 100%;height: 100%;
+position: relative;
+background-color: #2b4ba508;
+cursor: pointer;perspective: 1000px;
+opacity: 0;
+  z-index: 200;
+}
+#wrapperSlideAdvert .containBtnLeft:hover .openLeft{
+     transform: rotateY(0deg);
+}
+#wrapperSlideAdvert .containBtnRight:hover .openRight{
+     transform: rotateY(-180deg);
+}
+#wrapperSlideAdvert .openLeft{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 100%;
+    top: 0;
+    background-color: #f3f3f3d1;
+    transform: rotateY(-89deg);
+    transform-origin: 0% 50%;
+    transition-duration: 0.5s;
+}
+#wrapperSlideAdvert .openRight{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0%;
+    top: 0;
+    background-color: #f3f3f3d1;
+    transform: rotateY(-268deg);
+    transform-origin: 0% 50%;
+    transition-duration: 0.5s;
+}
+
+#wrapperSlideAdvert .wrapBtnLeft {
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    left: 0;
+    top: 245px;
+}
+#wrapperSlideAdvert .wrapBtnRight{
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    right: 0;
+    top: 245px;
+}
+#wrapperSlideAdvert:hover .containBtnLeft,
+#wrapperSlideAdvert:hover .containBtnRight
+{
+    opacity: 1;
+}
+#wrapperSlideAdvert{
+    width: 100%;
+    height: 560px;
+    position: relative;
+    background-color: pink;
+}
+
+
+.oneSlide.slide-1 .imgSlide img {
+    width: 1000px;
+    /* position: absolute; */
+    /* left: -125px; */
+    /* top: 0; */
+    margin-left: -125px;
+    /* width: 100px; */
+}
+
+.oneSlide.slide-1 .imgSlide {
+    position: absolute;
+    top: 0;
+    /* right: -175px; */
+    right: 0;
+    overflow: hidden;
+    width: 700px;
+    height: 100%;
+    opacity: 0;
+    animation: anhLonLen 0.2s forwards;
+    animation-delay: 1.5s;
+}
+@keyframes anhLonLen{
+    0%{
+        opacity: 0;
+        transform: translateY(100%);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0%);
+    }
+}
+.oneSlide.slide-1 a.link2:hover {
+    /*border: none;*/
+    /* border: 0px solid; */
+    background-color: #3CD3EA;
+    border-color: #3CD3EA;
+}
+
+.oneSlide.slide-1 a.link1:hover {
+    background-color: #2C3E50;
+    border-color: #2C3E50;
+    color: white;
+}
+
+.oneSlide.slide-1 a.link2 {
+    padding: 15px 52px;
+    border: 1px solid white;
+    border-radius: 3px;
+    color: white;
+    animation-delay:1.5s;
+     animation-duration: 0.4s;
+}
+
+.oneSlide.slide-1 .btn {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-top: 25px;
+}
+
+.oneSlide.slide-1 a.link1 {
+    border-radius: 3px;
+    background-color: white;
+    padding: 15px 35px;
+    margin-right: 15px;
+    color: #2C3E50;
+    border:1px solid white;
+    animation-delay: 1.5s;/*đợi mấy cái chữ chạy xong đã*/
+    animation-duration: 0.2s;
+}
+
+.oneSlide.slide-1 a {
+    display: block;
+    font-size: 14px;
+    transition-timing-function: linear;
+    transition-duration: 0.2s; /*dùng cho thay đổi khi hover*/
+    animation-name: duoilen ;
+    animation-fill-mode: forwards;
+   
+    opacity: 0;
+    
+
+}
+@keyframes duoilen{
+    0%{
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+.slide-1 .contain1Slide p {
+    display: block;
+    width: 550px;
+    line-height: 30px;
+    margin-top: 18px;
+    font-size: 18px;
+      animation-name: divao ;
+    animation-fill-mode: forwards;
+    animation-duration: 0.5s;
+    opacity: 0;
+    animation-delay: 1s;
+}
+
+.slide-1 .contain1Slide img {
+    width: 535px;
+      animation-name: divao ;
+    animation-fill-mode: forwards;
+    animation-duration: 0.5s;
+    opacity: 0;
+    animation-delay: 0.5s;
+}
+
+.slide-1 .contain1Slide h1 {
+    font-size: 36px;
+    animation-name: divao ;
+    animation-fill-mode: forwards;
+    animation-duration: 0.5s;
+    opacity: 0;
+
+}
+@keyframes divao{
+    0%{
+    transform: translateX(-100%);
+    opacity: 1;
+    }
+    100%{
+        transform: translateX(0%);
+        opacity: 1;
+    }
+}
+
+.oneSlide.slide-1 {
+    background-color: #FE81B5;
+    position: relative;
+    overflow: hidden;
+}
+
+.contain1Slide {
+    width: 100%;
+    height: 100%;
+    font-family: Lato;
+    /* color: white; */
+}
+
+.slide-1 .contain1Slide {
+    color: white;
+    box-sizing: border-box;
+    padding-top: 100px;
+}
+
+.oneSlide {
+    width: 100%;
+    height: 100%;
+}
+
+.wrapSlides {
+    width: 100%;
+    height: 100%;
+}
+
+/*======================end slide advert ====================*/
