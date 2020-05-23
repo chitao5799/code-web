@@ -2,10 +2,22 @@
 	$(window).scroll(function() {
 		if($('#wrapper-menu-head').offset().top >=53){
 			$('.contain-menu').addClass('menuCrollFixedTop');
+			$('div#wrapper-menu-head').css("background-color","rgba(255, 255, 255, 0.93)");
 		}
 		else{
 			$('.contain-menu').removeClass('menuCrollFixedTop');
+			$('div#wrapper-menu-head').css("background-color","#ffffff");
 		}
+
+		if($('#wrapper-menu-head').offset().top >=450){
+			$('div#btnUpTop').addClass('btnUppingTop');
+		}
+		else{
+			$('div#btnUpTop').removeClass('btnUppingTop');
+		}
+	});
+	$('div#btnUpTop').click(function(){
+		$('html,body').animate({scrollTop: 0}, 1000);
 	});
 	//------------
 	$('.sub-menu-level2-8 .img').hover(function(){

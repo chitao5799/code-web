@@ -20,6 +20,35 @@ body{
             background-color: white;
             font-family: Lato;
 }
+
+div#btnUpTop span {
+    color: white;
+    font-size: 16px;
+    padding: 7px 7px 4px 7px;
+}
+div#btnUpTop span:hover {
+    background-color: #17DAB3;
+}
+div#btnUpTop {
+    width: 30px;
+    height: 30px;
+    background-color: #999999;
+    position: fixed;
+    z-index: 1080;
+    bottom: 30px;
+    border-radius: 2px;
+    right: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition-duration: 0.4s;
+    transform: translateY(65px);
+    overflow: hidden;
+}
+div#btnUpTop.btnUppingTop{
+    transform: translateY(0px);
+}
 /*===================start contact head top======================*/
 div#wrap-contact-top .cart span.icon {
     color: #1ABC9C;
@@ -178,6 +207,15 @@ div#menu-top >ul >li > a {
 .menuCrollFixedTop #ItemMenuSearch .itemMenuSearch{
         top: 71px;
 }
+.menuCrollFixedTop .sub-menu-level2,
+.menuCrollFixedTop .sub-menu-level3,
+.menuCrollFixedTop .sub-menu-level4{
+    background-color:rgba(255, 255, 255, 0.93);#f/*fffffe3*/
+}
+.menuCrollFixedTop .wrap-itemSubmenu-level2 li a:hover{
+    background-color:#e7e7e78c;
+}
+
 div#wrapper-menu-head {
     background-color: white;
     width: 100%;
