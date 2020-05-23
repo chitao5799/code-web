@@ -1,4 +1,13 @@
 // $(function(){
+	$(window).scroll(function() {
+		if($('#wrapper-menu-head').offset().top >=53){
+			$('.contain-menu').addClass('menuCrollFixedTop');
+		}
+		else{
+			$('.contain-menu').removeClass('menuCrollFixedTop');
+		}
+	});
+	//------------
 	$('.sub-menu-level2-8 .img').hover(function(){
 		$(this).children('div.LayerMo').toggleClass('hienLayerMo');
 		$(this).parent().parent().children('.text').children('.nameProduct').children('a').toggleClass('nameProductHovered');
@@ -54,9 +63,9 @@
 		$('.containBtnRight').click(function(envent){
 				slideNext();
 			});
-		setInterval(function(){ 
-			slideNext();
-		}, 5000);
+		// setInterval(function(){ 
+		// 	slideNext();
+		// }, 5000);
 		function slideNext(){
 			slideHienTai+=1;
 				if(slideHienTai===4){

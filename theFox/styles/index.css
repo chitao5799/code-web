@@ -17,7 +17,8 @@ a{
     text-decoration: none;
 }
 body{
-            background-color: #b0b0ed;
+            background-color: white;
+            font-family: Lato;
 }
 /*===================start contact head top======================*/
 div#wrap-contact-top .cart span.icon {
@@ -164,8 +165,19 @@ div#menu-top >ul >li > a {
     /* top: 0; */
     max-height: 89px;
     line-height: 89px;
+    height:  89px;
+    transition-timing-function: linear;
+    transition-duration: 0.2s;
 }
-
+.menuCrollFixedTop{
+    height: 55px;
+}
+.menuCrollFixedTop .sub-menu-level2{
+        top: 71px!important;
+}
+.menuCrollFixedTop #ItemMenuSearch .itemMenuSearch{
+        top: 71px;
+}
 div#wrapper-menu-head {
     background-color: white;
     width: 100%;
@@ -245,7 +257,8 @@ span.itemSubmenu-icon-2 {
     left: 250px;
     background-color: white;
     border-top: 3px solid #1ABC9C;
-     display: none; 
+    box-shadow: 8px 8px 14px #8e8e8e66;
+    display: none;
 }
 .sub-menu-level3 li{
     border-left: 1px solid #d0d0d0fa;
@@ -262,6 +275,7 @@ span.itemSubmenu-icon-2 {
 }
 .wrap-itemSubmenu-level2>ul>li:hover .sub-menu-level3{
     display: block;
+    /* box-shadow: -6px 8px 14px #8e8e8e66; */
 }
 
 .sub-menu-level2.sub-menu-level2-4 {
@@ -306,6 +320,7 @@ span.itemSubmenu-icon {
 }
 .sub-menu-level3-right {
     left: -250px;
+    box-shadow: -6px 8px 14px #8e8e8e66;
 }
 .sub-menu-level3-right li {
     border-left: none;
@@ -317,6 +332,7 @@ span.itemSubmenu-icon {
 } 
 .wrap-itemSubmenu-level2-6 .sub-menu-level3>ul>li:hover .sub-menu-level4{
     display: block;
+    box-shadow: -8px 8px 14px #8e8e8e66;
 } 
 .sub-menu-level4{
     position: absolute;
@@ -550,7 +566,7 @@ opacity: 0;
     left: 100%;
     top: 0;
     /*background-color: #f3f3f3d1;*/
-    /*sẽ có background là background của slide tiếp theo*/
+    /*sÃ¡ÂºÂ½ cÃƒÂ³ background lÃƒÂ  background cÃ¡Â»Â§a slide tiÃ¡ÂºÂ¿p theo*/
     /*background-image: url('../images/slider_bg71.jpg');*/
     transform: rotateY(-89deg);
     transform-origin: 0% 50%;
@@ -668,7 +684,7 @@ opacity: 0;
     margin-right: 15px;
     color: #2C3E50;
     border:1px solid white;
-    animation-delay: 1.5s;/*đợi mấy cái chữ chạy xong đã*/
+    animation-delay: 1.5s;/*Ã„â€˜Ã¡Â»Â£i mÃ¡ÂºÂ¥y cÃƒÂ¡i chÃ¡Â»Â¯ chÃ¡ÂºÂ¡y xong Ã„â€˜ÃƒÂ£*/
     animation-duration: 0.2s;
 }
 
@@ -676,7 +692,7 @@ opacity: 0;
     display: block;
     font-size: 14px;
     transition-timing-function: linear;
-    transition-duration: 0.2s; /*dùng cho thay đổi khi hover*/
+    transition-duration: 0.2s; /*dÃƒÂ¹ng cho thay Ã„â€˜Ã¡Â»â€¢i khi hover*/
     animation-name: duoilen ;
     animation-fill-mode: forwards;
    
@@ -1144,3 +1160,63 @@ opacity: 0;
     }
 }
 /*======================end slide advert ====================*/
+
+/*======================start title 1 ====================*/
+
+div#containTitle1 .contentTitle1 p {
+    line-height: 22px;
+    font-size: 18px;
+    font-family: LatoRegular, sans-serif;
+    font-weight: 100;
+}
+
+div#containTitle1 .contentTitle1 h1 {
+    line-height: 38px;
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+div#containTitle1 .contentTitle1 {
+    font-family: Lato;
+    border: 5px solid white;
+    height: 100%;
+    color: white;
+    box-sizing: border-box;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+div#containTitle1 .containContent {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(44,62,80,0.8);
+    padding: 15px;
+    box-sizing: border-box;
+    /* border: 5px solid white; */
+}
+
+div#containTitle1 {
+    width: 100%;
+    height: 200px;
+    margin: 100px 0px;
+    background-image: url('../images/topbanner1.jpg');
+    background-size: 100% 100%;
+}
+/*======================end title 1 ====================*/
+
+div#headerContent1 h2 {
+    font-size: 30px;
+    color: #2c3e50;
+}
+
+div#headerContent1 {
+    margin-bottom: 50px !important;
+    border-left-width: 22px !important;
+    padding-left: 10px !important;
+    border-left-color: #1abc9c !important;
+    border-left-style: solid !important;
+    line-height: 22px;
+}
