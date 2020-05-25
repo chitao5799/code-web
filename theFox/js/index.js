@@ -167,4 +167,79 @@
 						$('.di_vao_tu_ben_trai').addClass('slideActive').removeClass('di_vao_tu_ben_trai');
 					//}, 1000);
 			});
+		// ========================js cho star yellow rate product ========================
+		//---ko lấy được value
+		// $('.wrapProductItem a.productItem .starXam .title .rate').val(function(index,value){
+		// 	//alert(value);
+		// });
+		
+		// $('.wrapProductItem a.productItem .starXam .title .rate').contents().filter(function () {
+		// 	//if(this.nodeType === Node.TEXT_NODE)
+		// 		//alert(this.nodeType.value); 
+		// });
+
+		var rateAll= document.querySelectorAll(".wrapProductItem a.productItem .starXam .title .rate");
+		rateAll.forEach(function(item, index, array) {
+			//  console.log(item.childNodes[0].nodeValue);
+			  var starValue=item.childNodes[0].nodeValue.toString().split('.');
+			  console.log(starValue[0]);
+			  var intStar=parseInt(starValue[0]);
+			  if(intStar===5){
+			  	$(rateAll[index]).parent().parent().css('width','80px');
+			  }
+			  else if(intStar===4){
+			  	$(rateAll[index]).parent().parent().css('width','64px');
+				//rateAll[index].parentNode.parentNode.style.width="64px";
+			  }
+			  else if(intStar===3){
+			  	$(rateAll[index]).parent().parent().css('width','48px');
+			  }
+			  else if(intStar===2){
+			  	$(rateAll[index]).parent().parent().css('width','32px');
+			  }
+			  else if(intStar===1){
+			  	$(rateAll[index]).parent().parent().css('width','16px');
+			  }
+			  else{
+			  	$(rateAll[index]).parent().parent().css('width','80px');
+			  }
+		});
+
+		 $('.listProducts').slick({
+	      slidesToShow: 4,
+	      slidesToScroll: 1,
+	      nextArrow:$('#wrapSlideListProducts .btnRight'),
+	      prevArrow:$('#wrapSlideListProducts .btnLeft'),
+	      responsive: [
+			    {
+			        breakpoint: 1024,
+			        settings: {
+			          slidesToShow: 3,
+			          slidesToScroll: 3,
+			          infinite: true,
+			          dots: true
+			        }
+			      },
+			      {
+			        breakpoint: 600,
+			        settings: {
+			          slidesToShow: 2,
+			          slidesToScroll: 2
+			        }
+			      },
+			      {
+			        breakpoint: 480,
+			        settings: {
+			          slidesToShow: 1,
+			          slidesToScroll: 1
+			        }
+			      }
+			      // You can unslick at a given breakpoint now by adding:
+			      // settings: "unslick"
+			      // instead of a settings object
+			    ]
+	      // autoplay: true,
+	      // autoplaySpeed: 2000
+	      });
+			
 // });

@@ -1,6 +1,17 @@
+:root{
+    --black-color:#2C3E50;
+    --gray-color:#A1B1BC;
+    --blue-color:#2ED7CC;
+}
+html{
+    /*font size 10 px Ã„â€˜Ã¡Â»Æ’ cÃƒÂ¡c element con dÃƒÂ¹ng Ã„â€˜Ã†Â¡n vÃ¡Â»â€¹ rem cho rÃ¡Â»â€¦
+    vd: 1.6rem lÃƒÂ  16px*/
+    /*font-size: 10px;*/
+    font-family: 'Roboto','sans-serif';
+}
 *{
-	padding: 0px;
-	margin:0px;
+    padding: 0px;
+    margin:0px;
 }
 
 
