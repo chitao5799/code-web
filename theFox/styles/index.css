@@ -423,10 +423,14 @@ span.itemSubmenu-icon {
     top: 0;
     left: 0;
     background-color: #ffffff4d;
-    display: none;
+    /*display: none;*/
+    opacity: 0;
+    transition-duration: 0.2s;
+    will-change: opacity;
 }
 .sub-menu-level2-8 .LayerMo.hienLayerMo{
-    display: block;
+    /*display: block;*/
+    opacity: 1;
 }
 .sub-menu-level2-8 .componentTitle{
     display: flex;
@@ -446,11 +450,52 @@ span.itemSubmenu-icon {
 }
 .sub-menu-level2-8 .nameProduct a{
     color: #484c50;
+    transition-duration: 0.2s;
+    will-change: color;
 }
 .sub-menu-level2-8 .nameProduct a:hover,
 .sub-menu-level2-8 .nameProduct a.nameProductHovered{
     color: #46D1FF;
 }
+.sub-menu-level2-8 .nameProduct a {
+    position: relative;
+}
+.sub-menu-level2-8 .nameProduct a:hover span.tooltip,
+.sub-menu-level2-8 .nameProduct a span.tooltip.tolltipMenulevel2_8Show{
+    /*visibility: visible;*/
+    opacity: 1;
+}
+.sub-menu-level2-8 .nameProduct a span.tooltip {
+    background-color: var(--black-color);
+    position: absolute;
+    top: 30px;
+    left: -16px;
+    height: 22px;
+    width: max-content;
+    padding: 0px 9px;
+    color: white;
+    font-family: LatoRegular!important;
+    font-weight: 100;
+    font-size: 11px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    transition-delay: 0.2s;
+    opacity: 0;
+    transition-duration: 0.2s;
+    /*visibility: hidden;*/
+}
+.sub-menu-level2-8 .nameProduct a span.tooltip::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border: 6px solid;
+    border-color: transparent transparent var(--black-color) transparent;
+    left: 39%;
+    top: -12px;
+}
+
 .sub-menu-level2-8 .componentContent .text *{
     margin-bottom: 15px;
     line-height: 18px;
@@ -1245,12 +1290,12 @@ div#containTitle1 {
 }
 /*======================end title 1 ====================*/
 
-div#headerContent1 h2 {
+div.headerContentTitle h2 {
     font-size: 30px;
     color: #2c3e50;
 }
 
-div#headerContent1 {
+div.headerContentTitle {
     margin-bottom: 50px !important;
     border-left-width: 22px !important;
     padding-left: 10px !important;
@@ -1494,4 +1539,156 @@ div#wrapSlideListProducts .listProducts {
     height: 3px;
     background-color: #ECF0F1;
     margin-bottom: 1px;
+}
+/*====================start #wrapImgAdvert ===================*/
+
+div#wrapImgAdvert .common:hover .overlay{
+    opacity: 1;
+}
+div#wrapImgAdvert .common:hover .btn{
+    opacity: 1;
+    transform: translateY(0px);
+}
+div#wrapImgAdvert .btn {
+    position: absolute;
+    top: calc(50% - 52px/2);
+    left: calc(50% - 52px/2);
+    width: 52px;
+    height: 52px;
+    background-color: var(--black-color);
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    opacity: 0;
+    transition-duration: 0.3s;
+    will-change: opacity;
+    transform: translateY(30px);
+
+}
+
+div#wrapImgAdvert .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff4a;
+    opacity: 0;
+    transition-duration: 0.3s;
+    will-change: opacity;
+}
+
+div#wrapImgAdvert .left {
+    position: relative;
+    visibility: hidden;
+}
+
+div#wrapImgAdvert .right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+div#wrapImgAdvert .right>* {
+    height: 270px;
+    width: 100%;
+    position: relative;
+    visibility: hidden;
+}
+
+div#wrapImgAdvert img {
+    width: 100%;
+    height: 100%;
+}
+
+div#wrapImgAdvert {
+    width: 100%;
+    height: 570px;
+    margin: 50px 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+div#wrapImgAdvert>* {
+    width: 570px;
+    height: 100%;
+    /* position: relative; */
+}
+#wrapImgAdvert.effectImgAdvert .left{
+    animation: leftToRight 0.8s forwards;
+      animation-timing-function: ease-out;
+      visibility: visible;
+}
+@keyframes leftToRight{
+    0%{
+        transform: translateX(-100%);
+    }
+    40%{
+        transform: translateX(0px);
+    }
+    55%{
+        transform: translateX(10px);
+    }
+    70%{
+        transform: translateX(-10px);
+    }
+    90%{
+        transform: translateX(10px);
+    }
+    100%{
+        transform: translateX(0%);
+    }
+}
+#wrapImgAdvert.effectImgAdvert .rightTop{
+    animation: rightToLeft 0.8s forwards;
+    animation-timing-function: ease-out;
+    visibility: visible;
+}
+#wrapImgAdvert .rightBottom.effectrightBottom{
+    animation: rightToLeft 0.8s forwards;
+    animation-timing-function: ease-out;
+    visibility: visible;
+}
+
+@keyframes rightToLeft{
+    0%{
+        transform: translateX(100%);
+    }
+    40%{
+        transform: translateX(0px);
+    }
+    55%{
+        transform: translateX(-10px);
+    }
+    70%{
+        transform: translateX(10px);
+    }
+    90%{
+        transform: translateX(-10px);
+    }
+    100%{
+        transform: translateX(0%);
+    }
+}
+/*====================end #wrapImgAdvert ===================*/
+div#wrapBestSell .wrapProductsList {
+    /* display: flex; */
+    /* flex-wrap: wrap; */
+    /* flex-direction: row; */
+    /* justify-content: space-between; */
+    display: grid;
+    grid-template-columns: repeat(4,auto);
+    justify-content: space-between;
+    grid-row-gap: 40px;
+}
+
+div#wrapBestSell {
+    width: 100%;
+    height: auto;
+    margin: 100px 0px;
 }

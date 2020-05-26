@@ -8,25 +8,48 @@
 			$('.contain-menu').removeClass('menuCrollFixedTop');
 			$('div#wrapper-menu-head').css("background-color","#ffffff");
 		}
-
+		//-----------
 		if($('#wrapper-menu-head').offset().top >=450){
 			$('div#btnUpTop').addClass('btnUppingTop');
 		}
 		else{
 			$('div#btnUpTop').removeClass('btnUppingTop');
 		}
+		//-----------
+		var wrapImgAdvertOffsetTop=$('#wrapImgAdvert').offset().top;
+		var addedClassEffectImgAdvert=false;
+		var addedClassEffectrightBottom =false;
+		//alert(wrapImgAdvertOffsetTop);
+		if($('#wrapper-menu-head').offset().top >=(wrapImgAdvertOffsetTop-480) && addedClassEffectImgAdvert===false){
+			$('#wrapImgAdvert').addClass('effectImgAdvert');
+			addedClassEffectImgAdvert=true;
+		}
+		if($('#wrapper-menu-head').offset().top >=(wrapImgAdvertOffsetTop-250) && addedClassEffectrightBottom===false){
+			$('#wrapImgAdvert .rightBottom').addClass('effectrightBottom');
+			addedClassEffectrightBottom=true;
+		}
 	});
 	$('div#btnUpTop').click(function(){
 		$('html,body').animate({scrollTop: 0}, 1000);
 	});
 	//------------
+	var allNameProductSubmenuLevel2_8= document.querySelectorAll(".sub-menu-level2-8 .nameProduct a");
+		allNameProductSubmenuLevel2_8.forEach(function(item, index, array) {
+			//let name=item.childNodes[0].nodeValue;
+			let name=$(allNameProductSubmenuLevel2_8[index]).text();
+			$(allNameProductSubmenuLevel2_8[index]).append('<span class="tooltip">'+name+'</span>');
+		});
+
 	$('.sub-menu-level2-8 .img').hover(function(){
 		$(this).children('div.LayerMo').toggleClass('hienLayerMo');
 		$(this).parent().parent().children('.text').children('.nameProduct').children('a').toggleClass('nameProductHovered');
+		$(this).parent().parent().children('.text').children('.nameProduct').children('a').children('.tooltip').toggleClass('tolltipMenulevel2_8Show');
 	});
 	$('.sub-menu-level2-8 .nameProduct a').hover(function(){
 		$(this).parent().parent().parent().children('a').children('.img').children('div.LayerMo').toggleClass('hienLayerMo');
 	});
+
+	
 	// ========================js cho click button search========================
 	var isClickSearch=false;
 	$('#ItemMenuSearch .iconSearch').click(function(){
@@ -167,7 +190,7 @@
 						$('.di_vao_tu_ben_trai').addClass('slideActive').removeClass('di_vao_tu_ben_trai');
 					//}, 1000);
 			});
-		// ========================js cho star yellow rate product ========================
+		// ========================js for star yellow rate product ========================
 		//---ko lấy được value
 		// $('.wrapProductItem a.productItem .starXam .title .rate').val(function(index,value){
 		// 	//alert(value);
@@ -182,7 +205,7 @@
 		rateAll.forEach(function(item, index, array) {
 			//  console.log(item.childNodes[0].nodeValue);
 			  var starValue=item.childNodes[0].nodeValue.toString().split('.');
-			  console.log(starValue[0]);
+			 // console.log(starValue[0]);
 			  var intStar=parseInt(starValue[0]);
 			  if(intStar===5){
 			  	$(rateAll[index]).parent().parent().css('width','80px');
@@ -241,5 +264,7 @@
 	      // autoplay: true,
 	      // autoplaySpeed: 2000
 	      });
+		
+
 			
 // });
