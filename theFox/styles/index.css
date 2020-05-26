@@ -1466,6 +1466,21 @@ border-color: transparent transparent var(--black-color) transparent;
     display: inline-block;
     position: relative;
 }
+/*------fig bug slide with slick*/
+div#wrapSlideListProducts {
+    overflow: hidden;
+}
+.wrapOneProduct {
+    display: flex!important;
+    justify-content: center;
+    /* padding: 0 0px; */
+}
+div#wrapSlideListProducts .listProducts {
+
+    width: 1195px!important;
+    margin-left: -13px;
+
+}
 /*====================end products slide===================*/
 .rulerRegular {
     width: 100%;
