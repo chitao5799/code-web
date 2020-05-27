@@ -28,6 +28,11 @@
 			$('#wrapImgAdvert .rightBottom').addClass('effectrightBottom');
 			addedClassEffectrightBottom=true;
 		}
+		//-----------
+		var wrapSectionSummerTop=$('#SectionSummer').offset().top;
+		if($('#wrapper-menu-head').offset().top >=(wrapSectionSummerTop-250)){
+			$('#SectionSummer').addClass('EffectSectionSummer');
+		}
 	});
 	$('div#btnUpTop').click(function(){
 		$('html,body').animate({scrollTop: 0}, 1000);

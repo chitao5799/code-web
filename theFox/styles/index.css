@@ -1692,3 +1692,172 @@ div#wrapBestSell {
     height: auto;
     margin: 100px 0px;
 }
+
+/*====================start #SectionSummer ===================*/
+
+#SectionSummer .content a:hover {
+    background-color: white;
+    color: var(--black-color);
+}
+
+#SectionSummer .content p {
+    font-family: LatoRegular;
+    width: 571px;
+    font-size: 18px;
+    margin-top: 35px;
+    margin-bottom: 28px;
+}
+
+#SectionSummer .content .textGreat {
+    font-size: 77px;
+    margin: -7px 0px -4px 0px;
+}
+
+#SectionSummer .content h2 {
+    font-size: 36px;
+    font-family: Lato;
+    font-weight: 100;
+    color: #1ABB9C;
+    /* line-height: 27px; */
+    margin-bottom: 4px;
+    padding-left: 12px;
+}
+
+#SectionSummer .content .ruler {
+    height: 10px;
+    width: 570px;
+    background-color: white;
+}
+
+#SectionSummer .content a {
+    width: 220px;
+    height: 62px;
+    background-color: transparent;
+    border: 2px solid white;
+    display: block;
+    border-radius: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    transition-duration: 0.4s;
+}
+
+#SectionSummer{
+    width: 100%;
+    height: 700px;
+    background-image: url('../images/bg92.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    /* overflow: hidden; */
+}
+#SectionSummer .content {
+    width: 100%;
+    height: 100%;
+    text-align: left;
+    padding-top: 175px;
+    color: white;
+    visibility: hidden;
+}
+
+#SectionSummer.EffectSectionSummer .content{
+    animation: leftToRight 0.8s forwards;
+      animation-timing-function: ease-out;
+      visibility: visible;
+}
+/*====================end #SectionSummer ===================*/
+
+/*=================== start #wrapLatestNews ==================*/
+
+div#wrapLatestNewsContent .latestNewsItem .content h4 a:hover {
+    color: var(--green-color);
+}
+
+div#wrapLatestNewsContent .latestNewsItem .content .comment sapn.icon {
+    font-size: 16px;
+    margin-right: 6px;
+}
+
+div#wrapLatestNewsContent .latestNewsItem .content .comment {
+    color: var(--green-color);
+}
+
+div#wrapLatestNewsContent .latestNewsItem .content p {
+    color: var(--gray-color);
+    font-family: LatoRegular;
+    font-size: 14px;
+    margin: 22px 0px 24px 0px;
+}
+
+div#wrapLatestNewsContent .latestNewsItem .content h4 a {
+    font-size: 18px;
+    color: var(--black-color);
+    transition-duration: 0.4s;
+}
+
+div#wrapLatestNewsContent .latestNewsItem .content {
+    width: calc(100% - 270px - 20px);
+}
+
+div#wrapLatestNewsContent .latestNewsItem .img img {
+    width: 100%;
+    height: 100%;
+}
+
+div#wrapLatestNewsContent .latestNewsItem .img {
+    width: 270px;
+    height: 270px;
+    position: relative;
+}
+
+div#wrapLatestNewsContent .latestNewsItem .btn .text {
+    font-size: 12px;
+    line-height: 9px;
+}
+
+div#wrapLatestNewsContent .latestNewsItem .btn .number {
+    font-size: 24px;
+    line-height: 18px;
+}
+
+div#wrapLatestNewsContent .latestNewsItem .btn {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50px;
+    height: 50px;
+    background-color: var(--black-color);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    /* align-content: space-evenly; */
+}
+
+div#wrapLatestNewsContent .latestNewsItem {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+div#wrapLatestNewsContent {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2,calc(50% - 25px));
+    /*-25px vi moi hang co 2 item va chung cach nhau 50px*/
+    justify-content: space-between;
+    grid-row-gap: 50px;
+}
+
+div#wrapLatestNews {
+    width: 100%;
+    margin-top: 100px;
+}
+div#wrapLatestNewsContent .latestNewsItem .comment a {
+    color: var(--green-color);
+    font-family: LatoRegular;
+    font-size: 15px;
+}
+/*=================== end #wrapLatestNews ==================*/
