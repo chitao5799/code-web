@@ -1,4 +1,19 @@
-
+:root{
+    --black-color:#2C3E50;
+    --gray-color:#A1B1BC;
+    --blue-color:#2ED7CC;
+    --green-color:#1ABC9C;
+}
+*{
+    padding: 0px;
+    margin:0px;
+}
+html{
+    /*font size 10 px de cac element con co the dung don vi rem cho re
+    vd: 1.6rem la 16px*/
+    /*font-size: 10px;*/
+    font-family: 'Roboto','sans-serif';
+}
 @font-face {
     font-family: "Lato";
     src: url("../font/Lato/Lato-Black.ttf");
@@ -6,13 +21,21 @@
 @font-face {
     font-family: "LatoRegular";
     src: url("../font/Lato/Lato-Regular.ttf");
+    font-weight: 100;
 }
 @font-face {
-    font-family: "Lato";
+    font-family: "LatoRegular";
     src: url("../font/Lato/Lato-Bold.ttf");
     font-weight: bold;
 }
-
+@font-face {
+    font-family: "LatoLight";
+    src: url("../font/Lato/Lato-Light.ttf");
+}
+@font-face {
+    font-family: "LatoThin";
+    src: url("../font/Lato/Lato-Thin.ttf");
+}
 a{
     text-decoration: none;
 }
@@ -48,6 +71,18 @@ div#btnUpTop {
 }
 div#btnUpTop.btnUppingTop{
     transform: translateY(0px);
+}
+div#wrap-contact-top .cart::after {
+    /*co cai nay la vi khi hover vao cart thi xuat hien popup nhung popup lai cach cart 1 khoang
+    nen khi di chuot tu card xuong popup thi gap khoang trong thi popup se bien mat nen lam cai nay
+    de nap khoang trong do di va di chuot tu cart xuong popup thi popup se ko bi bien mat*/
+    content: "";
+    position: absolute;
+    top: 25px;
+    left: 0;
+    width: 100%;
+    height: 20px;
+    background-color: transparent;
 }
 /*===================start contact head top======================*/
 div#wrap-contact-top .cart span.icon {
@@ -484,6 +519,7 @@ span.itemSubmenu-icon {
     opacity: 0;
     transition-duration: 0.2s;
     /*visibility: hidden;*/
+    z-index: 2;
 }
 .sub-menu-level2-8 .nameProduct a span.tooltip::before {
     content: "";
@@ -504,14 +540,23 @@ span.itemSubmenu-icon {
     font-size: 14px;
     font-weight: bolder;
 }
-.sub-menu-level2-8 .componentContent .text .price{
+.sub-menu-level2-8 .componentContent .text .price {
     margin-bottom: 0px;
+    font-family: LatoRegular;
+    font-weight: 100;
+    font-size: 18px;
 }
-.sub-menu-level2-8 .componentContent .priceOld{
+.sub-menu-level2-8 .componentContent .priceOld {
     text-decoration: line-through;
+    font-family: LatoRegular;
+    font-weight: 100;
+    font-size: 18px;
 }
-.sub-menu-level2-8 .componentContent .priceNew{
+.sub-menu-level2-8 .componentContent .priceNew {
     color: #1ABC9C;
+    font-family: LatoRegular;
+    font-weight: 100;
+    font-size: 18px;
 }
 .sub-menu-level2-8 .price {
     color: #A1B1BC;
@@ -586,6 +631,13 @@ span.itemSubmenu-icon {
     border: navajowhite;
     background: white;
     cursor: pointer;
+}
+.imgLogoFixedTop{
+    width: 123px;
+}
+div#wrapper-menu-head.menuHeadFixedTop {
+    box-shadow: 0px 0px 5px 1px #00000014;
+    background-color:rgba(255, 255, 255, 0.93);
 }
 .itemMenuSearch {
     position: absolute;
@@ -795,15 +847,17 @@ opacity: 0;
 }
 .slide-1 .contain1Slide p {
     display: block;
-    width: 550px;
+    width: 535px;
     line-height: 30px;
     margin-top: 18px;
     font-size: 18px;
-      animation-name: divao ;
+    animation-name: divao;
     animation-fill-mode: forwards;
     animation-duration: 0.5s;
     opacity: 0;
     animation-delay: 1s;
+    font-family: LatoRegular;
+    font-size: 18px;
 }
 
 .slide-1 .contain1Slide img {
@@ -1293,6 +1347,12 @@ div#containTitle1 {
 div.headerContentTitle h2 {
     font-size: 30px;
     color: #2c3e50;
+    /* font-weight: bold; */
+    /* font-family: LatoRegular; */
+    font-weight: 100;
+    font-family: Lato;
+    /*font family la duong dan den font bold ma them font-weight tu 10->500 la duoc chu to con tu 
+    600->bolder lai duoc chu manh hon.*/
 }
 
 div.headerContentTitle {
@@ -1356,10 +1416,12 @@ div#wrapSlideListProducts {
     position: relative;
     margin-bottom: 100px;
 }
-.wrapProductItem a.productItem .starXam:hover .title{
+/*.wrapProductItem a.productItem .starXam:hover .title*/
+.starXam:hover .title{
     visibility: visible;
 }
-.wrapProductItem a.productItem .starXam .title::before {
+/*.wrapProductItem a.productItem .starXam .title::before*/
+.starXam .title::before {
 content: "";
 z-index: 30;
 border: 6px solid;
@@ -1368,13 +1430,14 @@ top: -12px;
 left: 52px;
 border-color: transparent transparent var(--black-color) transparent;
 }
-
-.wrapProductItem a.productItem .starXam .title {
+/*.wrapProductItem a.productItem .starXam .title */
+.starXam .title {
     position: absolute;
     z-index: 5;
     width: 110px;
-    font-family: LatoRegular;
-    font-size: 11px;
+    font-family: LatoRegular!important;
+    font-size: 11px!important;
+    font-weight: 100!important;
     /* height: 24px; */
     background-color: var(--black-color);
     color: white;
@@ -1414,8 +1477,8 @@ border-color: transparent transparent var(--black-color) transparent;
     justify-content: space-evenly;
     align-items: center;
 }
-
-.wrapProductItem a.productItem .starXam {
+/*.wrapProductItem a.productItem .starXam*/
+.starXam {
     width: 80px;
     height: 16px;
     background-image: url('../images/star.png');
@@ -1450,13 +1513,16 @@ border-color: transparent transparent var(--black-color) transparent;
     font-size: 18px;
     transition-duration: 0.3s;
     will-change: color;
+    font-family: LatoRegular;
+    font-weight: 800;
 }
 
 .wrapProductItem .box {
     padding: 18px 30px 0px 30px;
     display: block;
 }
-.wrapProductItem .box span.starVang {
+/*.wrapProductItem .box */
+span.starVang {
     background-image: url(../images/star.png);
     width: 80px;
     height: 16px;
@@ -1793,6 +1859,8 @@ div#wrapLatestNewsContent .latestNewsItem .content h4 a {
     font-size: 18px;
     color: var(--black-color);
     transition-duration: 0.4s;
+    font-family: LatoRegular;
+    font-weight: 800;
 }
 
 div#wrapLatestNewsContent .latestNewsItem .content {
@@ -1861,3 +1929,316 @@ div#wrapLatestNewsContent .latestNewsItem .comment a {
     font-size: 15px;
 }
 /*=================== end #wrapLatestNews ==================*/
+/*=================== start #wrapProduct3Columns ==================*/
+
+.sub-menu-level2-8 .starXam {
+    position: relative;
+}
+.sub-menu-level2-8 .starXam:before {
+    /*muc dich co them cai nay la de fix bug khi hover vao star thi lai hien tooltip cua ten san pham
+    vi tool tip cua ten san pham dang nam tren may cai star va no co z-index=3*/
+    content: "";
+    width: 100%;
+    height: 100%;
+    display: block;
+    z-index: 5;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.sub-menu-level2.sub-menu-level2-8 span.rate {
+    font-size: 11px!important;
+    margin-bottom: 0px!important;
+    /* line-height: 8px; */
+}
+.sub-menu-level2-8 .starXam .title {
+    padding: 6px 0px;
+    /* z-index: 5; */
+}
+div#wrapProduct3Columns .sub-menu-level2-8 .nameProduct a span.tooltip {
+    left: 42px;
+    top: 28px;
+    z-index: 3;
+}
+
+div#wrapProduct3Columns .componentContent .text {
+    width: calc(100% - 104px);
+    text-align: left;
+}
+
+div#wrapProduct3Columns .sub-menu-level2-8 .nameProduct a {
+    width: 100%;
+    display: block;
+}
+
+div#wrapProduct3Columns .componentContent {
+    border-bottom-color: #ECF0F1;
+}
+
+div#wrapProduct3Columns .contentItemSubmenu {
+    padding: 0px;
+}
+
+div#wrapProduct3Columns .wrap-itemSubmenu-level2 {
+    width: 100%;
+    border-right: none;
+}
+
+div#wrapProduct3Columns .sub-menu-level2.sub-menu-level2-8 {
+    position: relative;
+    top: 0;
+    left: 0;
+    display: block;
+    box-shadow: none;
+    border-top: none;
+    display: grid;
+    /*chia 3 cot ma khoang cach giua cac cot la 30px nen tong khoang cach la 60px nen de do rong moi cot bang nhau
+    thi do rong cua moi cot se phai mat di la 60/3=20px*/
+    grid-template-columns: repeat(3,calc(33.33333% - 20px));
+    justify-content: space-between;
+    width: 100%;
+    background-color: #F9FAFB;
+}
+
+div#wrapProduct3Columns {
+    width: 100%;
+    background-color: #F9FAFB;
+    border-top: 1px solid #EBEBEB;
+    margin-top: 100px;
+    padding-top: 100px;
+    padding-bottom: 95px;
+}
+
+/*=================== end #wrapProduct3Columns ==================*/
+/*=================== start #footer ==================*/
+
+div#footer .footer_item4 .footer_item4-item:last-child {
+    border: none;
+}
+
+div#footer .footer_item4 .footer_item4-itemTitle {
+    font-size: 14.5px;
+}
+
+div#footer .footer_item4 .footer_item4-item {
+    margin-bottom: 18px;
+    padding-bottom: 17px;
+    border-bottom: 1px solid #243240;
+}
+
+div#footer .footer_item4 {}
+
+div#footer .footer_item3 .date:last-child {
+    border: none;
+    margin-bottom: 0;
+}
+
+div#footer .footer_item3 .date a:hover {
+    color: var(--green-color);
+}
+
+div#footer .footer_item3 .date a {
+    color: var(--gray-color);
+    font-size: 14px;
+    transition-duration: 0.2s;
+}
+
+div#footer .footer_item3 .date {
+    padding-bottom: 19px;
+    border-bottom: 1px solid #243240;
+    margin-bottom: 17px;
+    width: 100%;
+}
+
+div#footer .footer_item3 .wrapBtns {
+    margin-bottom: 30px;
+}
+
+div#footer .footer_item3 .btn a:hover {
+    background-color: var(--green-color);
+    color: #ffffff;
+    border-color: var(--green-color);
+}
+
+div#footer .footer_item3 .btn {
+    display: inline-block;
+    width: auto;
+    margin-right: 3px;
+    margin-bottom: 7px;
+}
+
+div#footer .footer_item3 .btn a {
+    padding: 6px 10px 9px 10px;
+    width: fit-content;
+    display: inline-block;
+    border: 1px solid #96B2B9;
+    color: #96B2B9;
+    transition-duration: 0.2s;
+    font-size: 13px;
+    /* margin-right: 5px; */
+    /* margin-bottom: 5px; */
+}
+
+div#footer .footer_item3 {}
+
+div#footer .footer_item2_item .footer_item2_itemTitle a:hover {
+    color: var(--green-color);
+}
+
+.footer_item2 {}
+
+div#footer .footer_item2 .footer_item2_item:hover .img .btn {
+    opacity: 1;
+}
+
+div#footer .footer_item2_item .img .btn {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: #3bc0e9cf;
+    font-size: 24px;
+    opacity: 0;
+    transition-duration: 0.2s;
+    transition-timing-function: linear;
+}
+
+div#footer .footer_item2_item:last-child {
+    border-bottom: none;
+    margin-bottom: 0px;
+}
+
+div#footer .footer_item2_item .footer_item2_itemTitle a {
+    font-family: LatoRegular;
+    font-size: 16px;
+    font-weight: 800;
+    color: white;
+    transition-duration: 0.2s;
+    /* line-height: 12px; */
+}
+
+div#footer .footer_item2_item .footer_item2Content {
+    /* flex-grow: 1; */
+    width: calc(100% - 65px);
+}
+
+div#footer .footer_item2_item {
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 28px;
+    border-bottom: 1px solid #243240;
+    margin-bottom: 20px;
+}
+
+div#footer .footer_item2_item .img img {
+    width: 100%;
+    height: 100%;
+}
+
+div#footer .footer_item2_item .img {
+    width: 50px;
+    height: 50px;
+    margin-right: 15px;
+    position: relative;
+    /* flex-grow: 0; */
+}
+
+div#footer .footer_item1 p {
+    margin-bottom: 17px;
+}
+
+div#footer h4.headerFooterItem {
+    color: #ffffff;
+    /* font-family: LatoRegular; */
+    font-weight: 100;
+    font-size: 24px;
+    font-style: normal;
+    font-family: LatoLight;
+    margin-bottom: 40px;
+}
+
+div#footer p {
+    font-family: LatoRegular;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+div#footer .footer_item1 {}
+
+div#footer .footer_item1 img {
+    width: 270px;
+    margin-bottom: 21px;
+}
+
+div#footer .wrapper {
+    display: grid;
+    grid-template-columns: repeat(4,calc(25% - 22.5px));
+    justify-content: space-between;
+    padding-top: 45px;
+    padding-bottom: 50px;
+}
+
+div#footer {
+    background-color: #1A1C27;
+    width: 100%;
+    /* line-height: 23px; */
+    color: var(--gray-color);
+    font-family: LatoRegular;
+    font-weight: 400;
+}
+
+/*=================== end #footer ==================*/
+
+div#Bottom .rightBtn span {
+    margin-left: 16px;
+}
+
+div#Bottom .rightBtn a:hover {
+    color: #ffffff;
+}
+
+div#Bottom .rightBtn a {
+    color: var(--gray-color);
+    transition-duration: 0.2s;
+    font-size: 13px;
+}
+
+div#Bottom .wrapper {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+div#Bottom .copyrightLeft a:hover {
+    color: #ffffff;
+}
+
+div#Bottom .copyrightLeft {
+    font-size: 14px;
+    font-family: LatoRegular;
+}
+
+div#Bottom .copyrightLeft a {
+    color: var(--green-color);
+    transition-duration: 0.2s;
+}
+
+div#Bottom span {
+    color: var(--gray-color);
+}
+
+div#Bottom {
+    width: 100%;
+    background-color: #222533;
+    height: 92px;
+    border-top: 1px solid #282B39;
+}

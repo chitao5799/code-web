@@ -1,15 +1,3 @@
-:root{
-    --black-color:#2C3E50;
-    --gray-color:#A1B1BC;
-    --blue-color:#2ED7CC;
-    --green-color:#1ABC9C;
-}
-html{
-    /*font size 10 px de cac element con co the dung don vi rem cho re
-    vd: 1.6rem la 16px*/
-    /*font-size: 10px;*/
-    font-family: 'Roboto','sans-serif';
-}
 *{
     padding: 0px;
     margin:0px;

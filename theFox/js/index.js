@@ -2,11 +2,13 @@
 	$(window).scroll(function() {
 		if($('#wrapper-menu-head').offset().top >=53){
 			$('.contain-menu').addClass('menuCrollFixedTop');
-			$('div#wrapper-menu-head').css("background-color","rgba(255, 255, 255, 0.93)");
+			$('div#wrapper-menu-head').addClass('menuHeadFixedTop');//.css("background-color","rgba(255, 255, 255, 0.93)");
+			$('#wrapper-menu-head .loge-menu-top img').addClass('imgLogoFixedTop');
 		}
 		else{
 			$('.contain-menu').removeClass('menuCrollFixedTop');
-			$('div#wrapper-menu-head').css("background-color","#ffffff");
+			$('div#wrapper-menu-head').removeClass('menuHeadFixedTop');//.css("background-color","#ffffff");
+			$('#wrapper-menu-head .loge-menu-top img').removeClass('imgLogoFixedTop');
 		}
 		//-----------
 		if($('#wrapper-menu-head').offset().top >=450){
@@ -206,7 +208,7 @@
 		// 		//alert(this.nodeType.value); 
 		// });
 
-		var rateAll= document.querySelectorAll(".wrapProductItem a.productItem .starXam .title .rate");
+		var rateAll= document.querySelectorAll(".starXam .title .rate");
 		rateAll.forEach(function(item, index, array) {
 			//  console.log(item.childNodes[0].nodeValue);
 			  var starValue=item.childNodes[0].nodeValue.toString().split('.');
