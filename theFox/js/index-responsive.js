@@ -46,6 +46,7 @@
 	$('.menu-icon').click(function(){
 		$('body').toggleClass('bodyToLeft');
 		$('#menu-top').toggleClass('menuTopAppear');
+
 	})
 	//------------
 	var allNameProductSubmenuLevel2_8= document.querySelectorAll(".sub-menu-level2-8 .nameProduct a");
@@ -275,7 +276,26 @@
 		// --------------------------------------------
 		$('.icon-subMenu').click(function(){
 			$(this).toggleClass('icon-subMenucClicked');
+			$(this).toggleClass('colorGreenItemMenuClicked');
+			$(this).siblings('a').toggleClass('colorGreenItemMenuClicked');
+			$(this).siblings('.sub-menu-level2').children().children('.itemSubmenu-level2-responsiveTitle').toggleClass('itemSubmenu-level2-responsiveTitleShow');
+			$(this).siblings('.sub-menu-level2').children().children('.icon-subMenuTitleLevel2').toggleClass('itemSubmenu-level2-responsiveTitleShow');
+	
+			$(this).siblings('.sub-menu-level2-2').children().children('ul').toggleClass('listItemSubmenu-level2-show');
+			$(this).siblings('.sub-menu-level2-2').children().children('ul').children('li').children('.icon-subMenuTitleLevel2').toggleClass('itemSubmenu-level2-responsiveTitleShow');
 		});
+		$('.icon-subMenuTitleLevel2').click(function(){
+			$(this).toggleClass('icon-subMenuTitleLevel2Clicked');
+			$(this).siblings('.itemSubmenu-level2-responsiveTitle').children('a').toggleClass('colorGreenItemMenuClicked');
+			$(this).toggleClass('colorGreenItemMenuClicked');
+			$(this).siblings('ul').toggleClass('listItemSubmenu-level2-show');
 
+			$(this).siblings('.sub-menu-level3').siblings('a').toggleClass('colorGreenItemMenuClicked');
+			$(this).siblings('.sub-menu-level3').children('ul').toggleClass('listItemSubmenu-level2-show');
+			$(this).siblings('.sub-menu-level3').children().children().children('.icon-subMenuTitleLevel2').toggleClass('itemSubmenu-level2-responsiveTitleShow');
+			
+			$(this).siblings('.sub-menu-level4').siblings('a').toggleClass('colorGreenItemMenuClicked');
+			$(this).siblings('.sub-menu-level4').children('ul').toggleClass('listItemSubmenu-level2-show');
+		});
 			
 // });

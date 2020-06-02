@@ -202,18 +202,11 @@ div#wrap-contact-top .cart:hover div#product-cart{
 
 /*=========================start menu top==========================*/
 
-div#menu-top >ul >li > a:hover {
-    color: #1ABC9C;
-    text-decoration: none;
-}
-div#menu-top a:hover {
-    text-decoration: none;
-}
+
+
 .loge-menu-top {box-sizing: border-box;/* margin-top: 25px; */float: left;/* line-height: 90px; */height: 90px;width: 155px;display: flex;justify-content: center;align-content: center;/* text-align: center; */align-items: center;align-self: center;/* padding-top: 13px; *//* overflow: hidden; */}
 
-.contain-menu.menuCrollFixedTop .loge-menu-top {
-    height: 55px;
-}
+
 div#menu-top>ul>li {
     display: inline-block;
     /* margin-left: 40px; */
@@ -247,25 +240,6 @@ div#menu-top >ul >li > a {
     transition-timing-function: linear;
     transition-duration: 0.2s;
 }
-.contain-menu.menuCrollFixedTop{
-    height: 55px;
-    line-height: 55px;
-}
-.menuCrollFixedTop .sub-menu-level2{
-        top: 54px!important;
-}
-.menuCrollFixedTop #ItemMenuSearch .itemMenuSearch{
-        top: 54px;
-        background-color: rgba(255, 255, 255, 0.93);
-}
-.menuCrollFixedTop .sub-menu-level2,
-.menuCrollFixedTop .sub-menu-level3,
-.menuCrollFixedTop .sub-menu-level4{
-    background-color:rgba(255, 255, 255, 0.93);#f/*fffffe3*/
-}
-.menuCrollFixedTop .wrap-itemSubmenu-level2 li a:hover{
-    background-color:#e7e7e78c;
-}
 
 div#wrapper-menu-head {
     background-color: white;
@@ -297,9 +271,7 @@ div#menu-top>ul>li:last-child a {
     box-shadow: 0px 8px 14px #8e8e8e66;
     display: none;
 }
-div#menu-top >ul >li:hover .sub-menu-level2{
-    display: flex;
-}
+
 .wrap-itemSubmenu-level2 {
     width: 25%;
     border-right: 1px solid #d0d0d0fa;
@@ -311,10 +283,7 @@ div#menu-top >ul >li:hover .sub-menu-level2{
 }
 
 
-.wrap-itemSubmenu-level2 li a:hover {
-    background-color: #efefef;
-    color: #1b1b1b;
-}
+
 .wrap-itemSubmenu-level2 li a {
     width: 100%;
     height: 100%;
@@ -364,10 +333,7 @@ span.itemSubmenu-icon-2 {
     padding-left: 25px;
     box-sizing: border-box;
 }
-.wrap-itemSubmenu-level2>ul>li:hover .sub-menu-level3{
-    display: block;
-    /* box-shadow: -6px 8px 14px #8e8e8e66; */
-}
+
 
 .sub-menu-level2.sub-menu-level2-4 {
     left: -607px;
@@ -421,10 +387,7 @@ span.itemSubmenu-icon {
 .wrap-itemSubmenu-level2-6 .sub-menu-level3>ul>li{
     position: relative;
 } 
-.wrap-itemSubmenu-level2-6 .sub-menu-level3>ul>li:hover .sub-menu-level4{
-    display: block;
-    box-shadow: -8px 8px 14px #8e8e8e66;
-} 
+
 .sub-menu-level4{
     position: absolute;
     top: -3px;
@@ -506,18 +469,11 @@ span.itemSubmenu-icon {
     transition-duration: 0.2s;
     will-change: color;
 }
-.sub-menu-level2-8 .nameProduct a:hover,
-.sub-menu-level2-8 .nameProduct a.nameProductHovered{
-    color: #46D1FF;
-}
+
 .sub-menu-level2-8 .nameProduct a {
     position: relative;
 }
-.sub-menu-level2-8 .nameProduct a:hover span.tooltip,
-.sub-menu-level2-8 .nameProduct a span.tooltip.tolltipMenulevel2_8Show{
-    /*visibility: visible;*/
-    opacity: 1;
-}
+
 .sub-menu-level2-8 .nameProduct a span.tooltip {
     background-color: var(--black-color);
     position: absolute;
@@ -608,9 +564,7 @@ span.itemSubmenu-icon {
     cursor: pointer;
     
 }
-#ItemMenuSearch .iconSearch:hover{
-    color: #1ABC9C;
-}
+
 .itemMenuSearch input[type="text"]::placeholder {
     color: #a8b7c1;
 }
@@ -654,10 +608,7 @@ span.itemSubmenu-icon {
 .imgLogoFixedTop{
     width: 123px;
 }
-div#wrapper-menu-head.menuHeadFixedTop {
-    box-shadow: 0px 0px 5px 1px #00000014;
-    background-color:rgba(255, 255, 255, 0.93);
-}
+
 .itemMenuSearch {
     position: absolute;
     right: 0px;
@@ -677,6 +628,77 @@ div#wrapper-menu-head.menuHeadFixedTop {
     opacity: 1;
     visibility: visible;
     /* background-color: rgba(255, 255, 255, 0.93); */
+}
+div#wrapper-menu-head.menuHeadFixedTop {
+    box-shadow: 0px 0px 5px 1px #00000014;
+    background-color:rgba(255, 255, 255, 0.93);
+    }
+    .contain-menu.menuCrollFixedTop .loge-menu-top {
+    height: 55px;
+    } 
+    .contain-menu.menuCrollFixedTop{
+        height: 55px;
+        line-height: 55px;
+    }
+    .menuCrollFixedTop #ItemMenuSearch .itemMenuSearch{
+            top: 54px;
+            background-color: rgba(255, 255, 255, 0.93);
+    }
+@media only screen and (min-width: 1035px) {
+    *{
+        
+    }
+    
+    div#menu-top >ul >li > a:hover {
+    color: #1ABC9C;
+    text-decoration: none;
+    }
+   
+    .menuCrollFixedTop .sub-menu-level2{
+            top: 54px!important;
+    }
+    
+    .menuCrollFixedTop .sub-menu-level2,
+    .menuCrollFixedTop .sub-menu-level3,
+    .menuCrollFixedTop .sub-menu-level4{
+        background-color:rgba(255, 255, 255, 0.93);#f/*fffffe3*/
+    }
+    .menuCrollFixedTop .wrap-itemSubmenu-level2 li a:hover{
+        background-color:#e7e7e78c;
+    }
+    div#menu-top >ul >li:hover .sub-menu-level2{
+    display: flex;
+    }
+    .wrap-itemSubmenu-level2 li a:hover {
+    background-color: #efefef;
+    color: #1b1b1b;
+    }
+    .wrap-itemSubmenu-level2>ul>li:hover .sub-menu-level3{
+    display: block;
+    /* box-shadow: -6px 8px 14px #8e8e8e66; */
+    }
+    .wrap-itemSubmenu-level2-6 .sub-menu-level3>ul>li:hover .sub-menu-level4{
+    display: block;
+    box-shadow: -8px 8px 14px #8e8e8e66;
+    } 
+    div#menu-top a:hover {
+    text-decoration: none;
+    }
+    #ItemMenuSearch .iconSearch:hover{
+    color: #1ABC9C;
+    }
+    .sub-menu-level2-8 .nameProduct a:hover span.tooltip{
+    /*visibility: visible;*/
+    opacity: 1;
+    }
+    .sub-menu-level2-8 .nameProduct a:hover,
+    .sub-menu-level2-8 .nameProduct a.nameProductHovered{
+        color: #46D1FF;
+    }
+    .sub-menu-level2-8 .nameProduct a span.tooltip.tolltipMenulevel2_8Show{
+        /*visibility: visible;*/
+        opacity: 1;
+    }
 }
 /*======================end menu top===========================*/
 
