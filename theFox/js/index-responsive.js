@@ -273,22 +273,67 @@
 	      // autoplay: true,
 	      // autoplaySpeed: 2000
 	      });
-		// --------------------------------------------
+		// ========================js for menu top fixed right responsive========================
+	 	 function subMenuLevel2_8_h3Title(){
+		    let cart= $('.cart');
+			 $('.cart').remove();
+		     if($(window).width()<=1035){
+				var textTitle=document.querySelectorAll(".sub-menu-level2-8 .componentTitle h3");
+				if(textTitle[0].childNodes[0].nodeValue !=undefined)
+					textTitle.forEach(function(item, index, array) {
+						// $(textTitle[index].childNodes[0].nodeValue).wrap("<a href=''></a>");
+							let textNode=textTitle[index].childNodes[0].nodeValue;
+							$(textTitle[index].childNodes[0].nodeValue).remove();
+							$(textTitle[index]).html("<a href='#'>"+textNode+"</a>");
+						}
+					);
+				$('#wrap-cart-menu').append(cart);
+			}
+			else{
+				var textTitle=document.querySelectorAll(".sub-menu-level2-8 .componentTitle h3 a");
+				if(textTitle!=undefined)
+					textTitle.forEach(function(item, index, array) {
+								let textNode=textTitle[index].childNodes[0].nodeValue;
+								$(textTitle[index]).parent('h3').html(textNode);
+								$(textTitle[index]).remove();
+							}
+						);
+				$('#wrap-cart-top').append(cart);
+				
+			}
+		}
+		subMenuLevel2_8_h3Title(); 
+		$(window).resize(function(){
+			subMenuLevel2_8_h3Title(); 
+		});
+		
 		$('.icon-subMenu').click(function(){
 			$(this).toggleClass('icon-subMenucClicked');
 			$(this).toggleClass('colorGreenItemMenuClicked');
 			$(this).siblings('a').toggleClass('colorGreenItemMenuClicked');
-			$(this).siblings('.sub-menu-level2').children().children('.itemSubmenu-level2-responsiveTitle').toggleClass('itemSubmenu-level2-responsiveTitleShow');
 			$(this).siblings('.sub-menu-level2').children().children('.icon-subMenuTitleLevel2').toggleClass('itemSubmenu-level2-responsiveTitleShow');
-	
+			$(this).siblings('.sub-menu-level2').children().children('.itemSubmenu-level2-responsiveTitle').toggleClass('itemSubmenu-level2-responsiveTitleShow');
+			$(this).siblings('.sub-menu-level2').children().children('.itemSubmenu-level2-responsiveTitle').siblings('ul').removeClass('listItemSubmenu-level2-show');
+			$(this).siblings('.sub-menu-level2').children().children('.itemSubmenu-level2-responsiveTitle').children('a').removeClass('colorGreenItemMenuClicked');
+			$(this).siblings('.sub-menu-level2').children().children('.itemSubmenu-level2-responsiveTitle').siblings('.icon-subMenuTitleLevel2').removeClass('icon-subMenuTitleLevel2Clicked');
+			$(this).siblings('.sub-menu-level2').children().children('.itemSubmenu-level2-responsiveTitle').siblings('.icon-subMenuTitleLevel2').removeClass('colorGreenItemMenuClicked');
+
 			$(this).siblings('.sub-menu-level2-2').children().children('ul').toggleClass('listItemSubmenu-level2-show');
 			$(this).siblings('.sub-menu-level2-2').children().children('ul').children('li').children('.icon-subMenuTitleLevel2').toggleClass('itemSubmenu-level2-responsiveTitleShow');
+		
+			$(this).siblings('.sub-menu-level2-3').children().children('ul').toggleClass('listItemSubmenu-level2-show');
+			$(this).siblings('.sub-menu-level2-3').children().children('ul').children('li').children('.icon-subMenuTitleLevel2').toggleClass('itemSubmenu-level2-responsiveTitleShow');		
+		
+			$(this).siblings('.sub-menu-level2-8').children().children('.contentItemSubmenu').toggleClass('contentItemSubmenuShow');
 		});
 		$('.icon-subMenuTitleLevel2').click(function(){
 			$(this).toggleClass('icon-subMenuTitleLevel2Clicked');
 			$(this).siblings('.itemSubmenu-level2-responsiveTitle').children('a').toggleClass('colorGreenItemMenuClicked');
 			$(this).toggleClass('colorGreenItemMenuClicked');
 			$(this).siblings('ul').toggleClass('listItemSubmenu-level2-show');
+
+			$(this).siblings('a.itemSubmenu-level2-3-title').toggleClass('colorGreenItemMenuClicked');
+			$(this).siblings('a.itemSubmenu-level2-3-title').parent('li').parent('ul').toggleClass('sub-menu-level2-3_Show');
 
 			$(this).siblings('.sub-menu-level3').siblings('a').toggleClass('colorGreenItemMenuClicked');
 			$(this).siblings('.sub-menu-level3').children('ul').toggleClass('listItemSubmenu-level2-show');

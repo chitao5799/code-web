@@ -80,7 +80,7 @@ div#btnUpTop {
 div#btnUpTop.btnUppingTop{
     transform: translateY(0px);
 }
-div#wrap-contact-top .cart::after {
+.cart::after {
     /*co cai nay la vi khi hover vao cart thi xuat hien popup nhung popup lai cach cart 1 khoang
     nen khi di chuot tu card xuong popup thi gap khoang trong thi popup se bien mat nen lam cai nay
     de nap khoang trong do di va di chuot tu cart xuong popup thi popup se ko bi bien mat*/
@@ -93,14 +93,14 @@ div#wrap-contact-top .cart::after {
     background-color: transparent;
 }
 /*===================start contact head top======================*/
-div#wrap-contact-top .cart span.icon {
+ .cart span.icon {
     color: #1ABC9C;
     font-size: 14px;
     margin-right: -2px;
     margin-left: 0px!important;
 }
 
-div#wrap-contact-top .cart {
+ .cart {
     background-color: #21303F;
     border-radius: 5px;
     position: relative;
@@ -111,8 +111,8 @@ div#wrap-contact-top a {
     text-decoration: none;
 }
 
-div#wrap-contact-top .cart a {
-    margin-left: 0px;
+ .cart a {
+    margin-left: 0px!important;
     padding: 6px 0px;
     /* padding: 10px 0px; */
     display: block;
@@ -151,7 +151,7 @@ div#wrapper-top {
 }
 
 
-#product-cart li {
+.cart-item {
     display: inline-block;
     margin-left: 0px;
     /* width: 100%; */
@@ -164,7 +164,7 @@ div#wrapper-top {
     margin-left: 0px!important;
 }
 
-ul.cart-list {
+.cart-list {
     list-style: none;
     margin-left: 0px!important;
     padding-top: 48px;
@@ -192,7 +192,7 @@ div#product-cart {
     z-index: 1005;
     box-shadow: 0px 0px 10px 0px #0000002e;
 }
-div#wrap-contact-top .cart:hover div#product-cart{
+.cart:hover div#product-cart{
     visibility: visible;
     opacity: 1;
      transform: translateY(-61px);
@@ -341,7 +341,7 @@ span.itemSubmenu-icon-2 {
 .sub-menu-level2.sub-menu-level2-3 {
     left: -465px;
 }
-div#menu-top .sub-menu-level2.sub-menu-level2-3 a.itemSubmenu-level2-3-title {
+div#menu-top .itemSubmenu-level2-3-title {
     color: black!important;
     font-family: Lato;
 }
@@ -553,8 +553,11 @@ span.itemSubmenu-icon {
 }
 
 .sub-menu-level2-8 .componentTitle h3 {
-    font-family: Lato;font-weight: bold;
-    font-size: 18px;/* padding: 0px; */
+    font-family: LatoRegular;
+    font-weight: bold;
+    color: var(--black-color);
+    font-size: 18px;
+    /* padding: 0px; */
     line-height: 19px;
 }
 .sub-menu-level2-8 ul>li:last-child{
