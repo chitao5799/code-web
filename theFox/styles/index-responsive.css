@@ -647,6 +647,18 @@ div#wrapper-menu-head.menuHeadFixedTop {
             top: 54px;
             background-color: rgba(255, 255, 255, 0.93);
     }
+    #wrapProduct3Columns .sub-menu-level2-8 .nameProduct a:hover span.tooltip{
+    /*visibility: visible;*/
+    opacity: 1;
+    }
+    #wrapProduct3Columns .sub-menu-level2-8 .nameProduct a:hover,
+    #wrapProduct3Columns .sub-menu-level2-8 .nameProduct a.nameProductHovered {
+    color: #46D1FF;
+    }
+    #wrapProduct3Columns .sub-menu-level2-8 .nameProduct a span.tooltip.tolltipMenulevel2_8Show {
+        /* visibility: visible; */
+        opacity: 1;
+    }
 @media only screen and (min-width: 1035px) {
     *{
         

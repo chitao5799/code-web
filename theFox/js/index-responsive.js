@@ -48,6 +48,12 @@
 		$('#menu-top').toggleClass('menuTopAppear');
 
 	})
+	// $('body:not(.menu-icon)').click(function(){
+	// 	if($('.bodyToLeft')!=undefined){
+	// 		$('body').removeClass('bodyToLeft');
+	// 		$('#menu-top').removeClass('menuTopAppear');
+	// 	}
+	// });
 	//------------
 	var allNameProductSubmenuLevel2_8= document.querySelectorAll(".sub-menu-level2-8 .nameProduct a");
 		allNameProductSubmenuLevel2_8.forEach(function(item, index, array) {
