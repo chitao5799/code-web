@@ -788,14 +788,16 @@ opacity: 0;
     height: 70px;
     position: absolute;
     left: 0;
-    top: 245px;
+    /*top: 245px;*/
+     top: calc(50% - 35px);
 }
 #wrapperSlideAdvert .wrapBtnRight{
     width: 70px;
     height: 70px;
     position: absolute;
     right: 0;
-    top: 245px;
+    /*top: 245px;*/
+    top: calc(50% - 35px);
 }
 #wrapperSlideAdvert:hover .containBtnLeft,
 #wrapperSlideAdvert:hover .containBtnRight
@@ -1139,7 +1141,7 @@ opacity: 0;
 .oneSlide.slide-3 .diagram img.img4 {
     position: absolute;top: 354px;
     left: 542px;
-    transform: rotateX(51deg);
+    transform: rotateX(59deg);
     transform-origin: 50% 50%;
      opacity: 0;
     animation: slide3_xuatHien 0.2s forwards;

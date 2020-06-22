@@ -139,7 +139,174 @@ div#wrap-cart-menu {
 @media only screen and (max-width: 1215px) {
   *{
     
+/* background-color: white; */
   }
+
+div#SectionSummer {}
+
+.oneSlide.slide-2 .imgSlide img {
+    margin-right: 0px;
+}
+
+.oneSlide.slide-2 .btn {
+    margin-top: 2.2vw;
+}
+
+.oneSlide.slide-1 .imgSlide {
+    width: 60vw;
+}
+
+.oneSlide.slide-1 .imgSlide img {
+    width: 85vw;
+}
+
+.oneSlide.slide-1 .btn {
+    margin-top: 2.1vw;
+}
+
+.slide-1 .contain1Slide p {
+    margin-top: 1.45vw;
+    width: 45vw;
+    line-height: 2.6vw;
+}
+
+.oneSlide.slide-3 .imgSlide {
+    top: 2.5vw;
+    left: 10vw;
+}
+
+#wrapperSlideAdvert {
+    height: 46vw;
+}
+
+.oneSlide.slide-3 .imgSlide img {
+    width: 21vw;
+}
+
+.oneSlide.slide-3 .diagram img.img5 {
+    width: 9vw;
+    top: 26.8vw;
+    left: 70vw;
+}
+
+.oneSlide.slide-3 .diagram img.img4 {
+    width: 26vw;
+    left: 45vw;
+    top: 29.5vw;
+}
+
+.oneSlide.slide-3 .diagram img.img3 {
+    width: 14vw;
+    top: 29vw;
+    left: 39vw;
+}
+
+.oneSlide.slide-3 .diagram img.img2 {
+    width: 43vw;
+    left: 4vw;
+    top: 12vw;
+}
+
+.oneSlide.slide-3 .diagram img.img1 {
+    width: 8.6vw;
+    top: 8vw;
+}
+
+.oneSlide.slide-3 .contain1Slide .ruler {
+    width: 45vw;
+}
+
+.oneSlide.slide-3 .contain1Slide h1 {
+    font-size: 5vw;
+    margin-top: 0.9vw;
+    margin-bottom: 1.9vw;
+    /* float: right; */
+}
+
+.oneSlide.slide-3 .contain1Slide img {
+    width: 22.5vw;
+    margin-top: 6.7vw;
+}
+
+.oneSlide.slide-2 .btn a {
+    font-size: 1.8vw;
+    padding: 0.9vw 1.9vw!important;
+    /* margin-right: 1.3vw; */
+    padding: 2vw 1.3vw!important;
+    height: unset;
+    display: inline-block;
+    line-height: 0px;
+    height: 0px;
+}
+
+.oneSlide.slide-2 .contain1Slide p {
+    width: 45vw;
+    line-height: 2.6vw;
+    margin-top: 0vw;
+    /* display: block; */
+}
+
+.oneSlide.slide-2 .contain1Slide h1 {
+    font-size: 4.9vw;
+    line-height: unset;
+    /* margin-bottom: 11px; */
+}
+
+.oneSlide.slide-2 .contain1Slide img {
+    width: 22vw;
+    margin-top: 6.5vw;
+}
+
+.wrapSlides .wrapper {
+    width: 96vw;
+}
+
+.oneSlide.slide-1 a {
+    font-size: 1.1vw;
+}
+
+.oneSlide.slide-1 a.link2 {
+    /* margin-right: 1.3vw; */
+    padding: 1.8vw 4.7vw;
+    height: unset;
+    display: inline-block;
+    line-height: 0px;
+    height: 0px;
+}
+
+.oneSlide.slide-1 a.link1 {
+    margin-right: 1.3vw;
+    padding: 1.8vw 3.3vw;
+    height: unset;
+    display: inline-block;
+    line-height: 0px;
+    height: 0px;
+    /* display: block; */
+}
+
+.slide-1 .contain1Slide p, .oneSlide.slide-2 .contain1Slide p,.oneSlide.slide-3 .contain1Slide p {
+    font-size: 1.5vw;
+}
+
+.slide-1 .contain1Slide img {
+    width: 40vw;
+}
+
+.slide-1 .contain1Slide h1 {
+    font-size: 3vw;
+}
+
+.contain1Slide {
+    /* font-size: 12vw; */
+}
+
+.slide-1 .contain1Slide {
+    padding-top: 8.3vw;
+}
+
+.oneSlide.slide-3 .contain1Slide {
+    width: 46vw;
+}
 div#menu-top>ul>li:last-child a {
     padding-right: 20px!important;
 }
@@ -242,6 +409,34 @@ div#wrapper-menu-head.menuHeadFixedTop .wrapper {}
   *{
     
   }
+
+div#SectionSummer {
+    height: 850px;
+}
+
+#SectionSummer .content p {
+    width: 100%;
+}
+
+#SectionSummer .content .textGreat {
+    text-align: center;
+}
+
+#SectionSummer .content .ruler {
+    width: 100%;
+}
+
+#SectionSummer .content h2 {
+    text-align: center;
+}
+
+#SectionSummer.EffectSectionSummer .content {
+    width: 345px;
+}
+
+.oneSlide.slide-1 .imgSlide {
+    right: -20px;
+}
   div#wrapper-menu-head.menuHeadFixedTop{
     background-color: white;
   }
@@ -709,6 +904,20 @@ div#menu-top >ul >li:hover .sub-menu-level2 {
   *{
     
   }
+
+.oneSlide.slide-1 .imgSlide {
+    right: -13vw;
+    right: -72px;
+}
+
+.oneSlide.slide-3 .contain1Slide h1 {
+    margin-top: 0.3vw;
+    margin-bottom: 1vw;
+}
+
+.oneSlide.slide-2 .btn a {
+    /* padding: 0.5vw 1.9vw!important; */
+}
 div#wrap-cart-menu {
     margin-right: 0px;
     width: 45px;
@@ -840,10 +1049,10 @@ div#footer .wrapper {
 }
 
 div#SectionSummer .wrapper {
-    width: 92%;
+    /* width: 92%; */
 }
 
 .wrapSlides .wrapper {
-    width: 92%;
+    /* width: 92%; */
 }
 }
